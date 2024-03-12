@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-
+        // TODO: Show win screen
     }
 
     /// <summary>
@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     /// <param name="newScenario">the name of the scene to be loaded</param>
     public void ChangeScenario(string newScenario)
     {
+        // Reinitialisation position joueur ? -> Fondu au noir
         UnloadCurrentScenario();
         LoadNewScenario(newScenario);
         currentScenarioName = newScenario;
