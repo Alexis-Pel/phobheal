@@ -25,5 +25,6 @@ public class MenuManager : MonoBehaviour
             GameObject phobiaCardToSpawn = Instantiate(phobiaCard, content.transform);
             contentManager.contentPanels.Add(phobiaCardToSpawn);
         }
+        contentManager.InitializeDots();
     }
 }

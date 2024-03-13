@@ -30,6 +30,12 @@ public class GameManager : MonoBehaviour
         // TODO: Show win screen
     }
 
+    public void StopGame()
+    {
+        // TODO: Stop the game -> Return to menu ?
+        ReturnToMenu();
+    }
+
     /// <summary>
     /// Change current scenario
     /// </summary>

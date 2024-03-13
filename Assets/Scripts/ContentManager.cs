@@ -51,11 +51,12 @@ public class ContentManager : MonoBehaviour
         }
     }
 
-    void InitializeDots()
+    public void InitializeDots()
     {
         // Create dots based on the number of content panels
         for (int i = 0; i < contentPanels.Count; i++)
         {
+            Debug.Log("o");
             GameObject dot = Instantiate(dotPrefab, dotsContainer.transform);
             Image dotImage = dot.GetComponent<Image>();
             dotImage.color = (i == currentIndex) ? Color.white : Color.gray;
