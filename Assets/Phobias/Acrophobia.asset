@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: Acrophobia
   m_EditorClassIdentifier: 
   m_name: Acrophobie
-  m_scene:
-    m_Handle: 0
+  m_scene: 1
   m_image: {fileID: 0}
-  m_description: 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private string currentScenarioName;
+    private ScenesEnum currentScenarioIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -40,12 +40,12 @@ public class GameManager : MonoBehaviour
     /// Change current scenario
     /// </summary>
     /// <param name="newScenario">the name of the scene to be loaded</param>
-    public void ChangeScenario(string newScenario)
+    public void ChangeScenario(ScenesEnum scene)
     {
         // Reinitialisation position joueur ? -> Fondu au noir
         UnloadCurrentScenario();
-        LoadNewScenario(newScenario);
-        currentScenarioName = newScenario;
+        LoadNewScenario(scene);
+        currentScenarioIndex = scene;
     }
 
 
@@ -57,16 +57,16 @@ public class GameManager : MonoBehaviour
 
     private void ReturnToMenu()
     {
-        SceneManager.LoadScene(Settings.MENU_SCENE_NAME, LoadSceneMode.Single);
+        SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
 
     private void UnloadCurrentScenario()
     {
-        SceneManager.UnloadSceneAsync(currentScenarioName);
+        SceneManager.UnloadSceneAsync(((int)currentScenarioIndex));
     }
 
-    private void LoadNewScenario(string newScenario)
+    private void LoadNewScenario(ScenesEnum scene)
     {
-        SceneManager.LoadScene(newScenario, LoadSceneMode.Additive);
+        SceneManager.LoadScene(((int)scene), LoadSceneMode.Additive);
     }
 }

@@ -31,18 +31,6 @@ public class PhobiaCard : MonoBehaviour
 
     public void GoToScenario()
     {
-        string scene = null;
-        switch (phobiaScriptable.m_scene)
-        {
-            case PhobiasEnum.ACROPHOBIA:
-                scene = Settings.ACROPHOBIA_SCENE_NAME;
-                break;
-            case PhobiasEnum.CLAUSTROPHOBIA:
-                scene = Settings.CLAUSTROPHOBIA_SCENE_NAME;
-                break;
-            default:
-                break;
-        }
-        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        SceneManager.LoadScene(((int)phobiaScriptable.m_scene), LoadSceneMode.Single);
     }
 }

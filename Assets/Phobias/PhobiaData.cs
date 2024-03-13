@@ -8,7 +8,6 @@ public class PhobiaScriptable : ScriptableObject
 {
     // Info
     public string m_name;
-    public PhobiasEnum m_scene;
+    public ScenesEnum m_scene;
     public Sprite m_image;
-    public string m_description;
 }
