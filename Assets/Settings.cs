@@ -4,5 +4,11 @@ using UnityEngine;
 
 public static class Settings
 {
-    public static string MENU_SCENE_NAME = "";
+}
+
+public enum ScenesEnum
+{
+    MENU,
+    ACROPHOBIA,
+    CLAUSTROPHOBIA
 }
