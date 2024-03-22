@@ -150,14 +150,14 @@ public class ContentManager : MonoBehaviour
         UpdateDots(); // Update dots on every timer tick
     }
 
-    void NextContent()
+    public void NextContent()
     {
         currentIndex = (currentIndex + 1) % contentPanels.Count;
         ShowContent();
         UpdateDots();
     }
 
-    void PreviousContent()
+    public void PreviousContent()
     {
         currentIndex = (currentIndex - 1 + contentPanels.Count) % contentPanels.Count;
         ShowContent();
