@@ -20,9 +20,19 @@ public class SwitchScript : MonoBehaviour
         Switch.transform.Rotate(10f, 0f, 0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        Debug.Log(other.name);
+        if(_isOn){
+            Light.SetActive(false);
+            _isOn = false;
+            Switch.transform.Rotate(-10f, 0f, 0f);
+        }else
+        {
+            Light.SetActive(true);
+            _isOn = true;
+            Switch.transform.Rotate(10f, 0f, 0f);
+        }
     }
+    
 }
