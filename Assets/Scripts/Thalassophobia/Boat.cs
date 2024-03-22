@@ -26,9 +26,9 @@ public class Boat : MonoBehaviour
     void Update()
     {
         Vector3 angleOffset = new Vector3(
-            FromPercentage(angleLimit.x, ease.Evaluate(Time.time / angleProcessTime.x)),
-            FromPercentage(angleLimit.y, ease.Evaluate(Time.time / angleProcessTime.y)),
-            FromPercentage(angleLimit.z, ease.Evaluate(Time.time / angleProcessTime.z))
+            angleLimit.x != 0 ? FromPercentage(angleLimit.x, ease.Evaluate(Time.time / angleProcessTime.x)) : transform.rotation.eulerAngles.x,
+            angleLimit.y != 0 ? FromPercentage(angleLimit.y, ease.Evaluate(Time.time / angleProcessTime.y)) : transform.rotation.eulerAngles.y,
+            angleLimit.z != 0 ? FromPercentage(angleLimit.z, ease.Evaluate(Time.time / angleProcessTime.z)) : transform.rotation.eulerAngles.z
         );
         transform.SetPositionAndRotation(
             new Vector3(transform.position.x, FromPercentage(heightLimit, ease.Evaluate(Time.time / heightProcessTime)), transform.position.z),
