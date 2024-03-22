@@ -10,5 +10,5 @@ public enum ScenesEnum
 {
     MENU,
     ACROPHOBIA,
-    CLAUSTROPHOBIA
+    CLAUSTROPHOBIA,
 }
