@@ -11,4 +11,5 @@ public enum ScenesEnum
     MENU,
     ACROPHOBIA,
     CLAUSTROPHOBIA,
+    THALASSOPHOBIA,
 }
