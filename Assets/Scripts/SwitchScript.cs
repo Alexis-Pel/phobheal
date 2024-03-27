@@ -20,9 +20,8 @@ public class SwitchScript : MonoBehaviour
         Switch.transform.Rotate(10f, 0f, 0f);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.name);
+    public void SwitchOnOff(){
+        Debug.Log("coucou");
         if(_isOn){
             Light.SetActive(false);
             _isOn = false;
