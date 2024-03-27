@@ -21,7 +21,6 @@ public class SwitchScript : MonoBehaviour
     }
 
     public void SwitchOnOff(){
-        Debug.Log("coucou");
         if(_isOn){
             Light.SetActive(false);
             _isOn = false;
