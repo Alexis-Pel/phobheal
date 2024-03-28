@@ -10,12 +10,19 @@ public class SwitchScript : MonoBehaviour
     [SerializeField]
     private GameObject Switch;
 
-    public bool _isOn;
+    [SerializeField]
+    private bool _isOn;
+
+    [SerializeField]
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        Light.SetActive(true);
+        if (gameManager != null && gameManager._isElectricMeterOn)
+        {
+            Light.SetActive(true);
+        }
         _isOn = true;
         Switch.transform.Rotate(10f, 0f, 0f);
     }
@@ -27,7 +34,9 @@ public class SwitchScript : MonoBehaviour
             Switch.transform.Rotate(-10f, 0f, 0f);
         }else
         {
-            Light.SetActive(true);
+            if (gameManager != null && gameManager._isElectricMeterOn){
+                Light.SetActive(true);
+            }
             _isOn = true;
             Switch.transform.Rotate(10f, 0f, 0f);
         }
