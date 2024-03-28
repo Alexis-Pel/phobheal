@@ -354,38 +354,6 @@ Transform:
   - {fileID: 631802903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 25.014, y: 0, z: 0}
---- !u!1 &443137525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443137526}
-  m_Layer: 0
-  m_Name: ElectricMeter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &443137526
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443137525}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.40185058, y: 0.91865045, z: 5.0244913}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 701905448}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631802902
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,68 +448,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &701905447
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 443137526}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.125
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.109
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-      propertyPath: m_Name
-      value: ElectricMeter
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
---- !u!4 &701905448 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
-  m_PrefabInstance: {fileID: 701905447}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &743066786
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +901,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2259557104056903713
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527321367200925878, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd3d51c64cc464b329166d546ad98922, type: 2}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384598307953912613, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883749366234798785, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
+      propertyPath: m_Name
+      value: ElectricMeter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b03c08c43067b45309a0cad9394e00b2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1005,4 +972,4 @@ SceneRoots:
   - {fileID: 743066790}
   - {fileID: 1454268518}
   - {fileID: 141931435}
-  - {fileID: 443137526}
+  - {fileID: 2259557104056903713}
