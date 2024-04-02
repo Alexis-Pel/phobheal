@@ -700,13 +700,7 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -2793711337207693153}
-  - {fileID: -6188517725551409221}
-  - {fileID: -5424779704495570165}
-  - {fileID: -14534648084268428}
-  - {fileID: 1963735653119126069}
   - {fileID: -7703920551055007845}
-  - {fileID: 8937852030660961670}
   - {fileID: -8080235419626966672}
   - {fileID: -4337559656109153041}
   - {fileID: 7362430145030465757}
