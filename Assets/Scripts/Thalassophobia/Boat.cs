@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UltimateXR.Extensions.Unity;
 using UnityEngine;
 
 public class Boat : MonoBehaviour

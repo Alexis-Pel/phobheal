@@ -1,4 +1,3 @@
-using UltimateXR.Extensions.Unity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
@@ -17,7 +16,7 @@ public class Cage : MonoBehaviour
     void Update()
     {
         float newHeight = transform.position.y + GetOffset();
-        transform.SetPositionY(Mathf.Min(newHeight, maxHeight));
+        transform.position = new Vector3(transform.position.x, Mathf.Min(newHeight, maxHeight), transform.position.z);
     }
 
     public void SetModifier(float modifier)
