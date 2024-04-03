@@ -9,7 +9,7 @@ public class Boat : MonoBehaviour
     [SerializeField] private float heightLimit;
     [SerializeField] private Vector3 angleProcessTime = Vector3.zero;
     [SerializeField] private Vector3 angleLimit = Vector3.zero;
-    [SerializeField] private AnimationCurve ease;
+    [SerializeField] private AnimationCurve animationCurve;
 
     private float FromPercentage(float max, float percentage)
     {
@@ -18,20 +18,20 @@ public class Boat : MonoBehaviour
 
     private void Start()
     {
-        ease.postWrapMode = WrapMode.PingPong;
-        ease.preWrapMode = WrapMode.PingPong;
+        animationCurve.postWrapMode = WrapMode.PingPong;
+        animationCurve.preWrapMode = WrapMode.PingPong;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 angleOffset = new Vector3(
-            angleLimit.x != 0 ? FromPercentage(angleLimit.x, ease.Evaluate(Time.time / angleProcessTime.x)) : transform.rotation.eulerAngles.x,
-            angleLimit.y != 0 ? FromPercentage(angleLimit.y, ease.Evaluate(Time.time / angleProcessTime.y)) : transform.rotation.eulerAngles.y,
-            angleLimit.z != 0 ? FromPercentage(angleLimit.z, ease.Evaluate(Time.time / angleProcessTime.z)) : transform.rotation.eulerAngles.z
+            angleLimit.x != 0 ? FromPercentage(angleLimit.x, animationCurve.Evaluate(Time.time / angleProcessTime.x)) : transform.rotation.eulerAngles.x,
+            angleLimit.y != 0 ? FromPercentage(angleLimit.y, animationCurve.Evaluate(Time.time / angleProcessTime.y)) : transform.rotation.eulerAngles.y,
+            angleLimit.z != 0 ? FromPercentage(angleLimit.z, animationCurve.Evaluate(Time.time / angleProcessTime.z)) : transform.rotation.eulerAngles.z
         );
         transform.SetPositionAndRotation(
-            new Vector3(transform.position.x, FromPercentage(heightLimit, ease.Evaluate(Time.time / heightProcessTime)), transform.position.z),
+            new Vector3(transform.position.x, FromPercentage(heightLimit, animationCurve.Evaluate(Time.time / heightProcessTime)), transform.position.z),
             Quaternion.Euler(angleOffset)
         );
     }

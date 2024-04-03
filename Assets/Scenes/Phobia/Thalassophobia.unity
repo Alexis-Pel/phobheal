@@ -466,7 +466,7 @@ MonoBehaviour:
   heightLimit: 0.1
   angleProcessTime: {x: 4.5, y: 0, z: 5}
   angleLimit: {x: 2, y: 0, z: 1.5}
-  ease:
+  animationCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
