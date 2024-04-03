@@ -10,4 +10,5 @@ public class PhobiaScriptable : ScriptableObject
     public string m_name;
     public ScenesEnum m_scene;
     public Sprite m_image;
+    public Vector3 m_StartPosition;
 }
