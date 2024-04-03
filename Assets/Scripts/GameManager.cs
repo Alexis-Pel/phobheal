@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private ScenesEnum currentScenarioIndex;
+    public GameObject player;
+    public GameObject player_locomotion;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        LoadNewScenario(Settings.SceneToLoad);
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         // Reinitialisation position joueur ? -> Fondu au noir
         UnloadCurrentScenario();
-        LoadNewScenario(scene);
+        LoadNewScenario((int) scene);
         currentScenarioIndex = scene;
     }
 
@@ -65,8 +67,14 @@ public class GameManager : MonoBehaviour
         SceneManager.UnloadSceneAsync(((int)currentScenarioIndex));
     }
 
-    private void LoadNewScenario(ScenesEnum scene)
+    private void LoadNewScenario(int scene)
     {
-        SceneManager.LoadScene(((int)scene), LoadSceneMode.Additive);
+        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+        SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneAt(scene));
+        player.transform.position = Settings.startPosition;
     }
+
+    // public delegate void Delegate();
+    // public Delegate WinStep;
+
 }

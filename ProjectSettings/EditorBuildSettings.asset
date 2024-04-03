@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3d6db0f7419879c468974344fbb9d1d7
+  - enabled: 1
+    path: Assets/Scenes/Acrophobia.unity
+    guid: e521534aa184f47f6b0c99a1d9d3bb11
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 383c55ac9a4974587a27bf39da9a842e, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 30913eb10dd4e4100b09677d0dbb9a3d, type: 2}

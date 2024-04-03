@@ -68,7 +68,7 @@ PlayerSettings:
   androidStartInFullscreen: 1
   androidRenderOutsideSafeArea: 1
   androidUseSwappy: 1
-  androidBlitType: 0
+  androidBlitType: 2
   androidResizableWindow: 0
   androidDefaultWindowWidth: 1920
   androidDefaultWindowHeight: 1080
@@ -136,11 +136,7 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 7025403646536366599, guid: 67fe8d8719ebc1f44b08cb5d65f31b54, type: 2}
-  - {fileID: 11400000, guid: 30913eb10dd4e4100b09677d0dbb9a3d, type: 2}
-  - {fileID: 11400000, guid: 383c55ac9a4974587a27bf39da9a842e, type: 2}
-  - {fileID: 6510383289097352879, guid: 43668ada3e046f44aad73b54108dcc7a, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,12 +151,13 @@ PlayerSettings:
   useHDRDisplay: 0
   hdrBitDepth: 0
   m_ColorGamuts: 00000000
-  targetPixelDensity: 30
+  targetPixelDensity: 78
   resolutionScalingMode: 0
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.PhobHeal
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -455,11 +452,15 @@ PlayerSettings:
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:
   - m_BuildTarget: Android
-    m_EncodingQuality: 1
+    m_EncodingQuality: 2
   - m_BuildTarget: iPhone
     m_EncodingQuality: 1
   - m_BuildTarget: tvOS
     m_EncodingQuality: 1
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 2
+  - m_BuildTarget: Windows Store Apps
+    m_EncodingQuality: 2
   m_BuildTargetGroupHDRCubemapEncodingQuality:
   - m_BuildTarget: Android
     m_EncodingQuality: 1
@@ -738,23 +739,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
-    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     GameCoreScarlett: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     LinuxHeadlessSimulation: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    QNX: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Stadia: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Standalone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
-    VisionOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    QNX: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    Stadia: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL;UNITY_POST_PROCESSING_STACK_V2
+    VisionOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     Windows Store Apps: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
-    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     iPhone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
