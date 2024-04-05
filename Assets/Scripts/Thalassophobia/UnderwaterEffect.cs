@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UnderwaterEffect : MonoBehaviour
@@ -33,11 +30,12 @@ public class UnderwaterEffect : MonoBehaviour
         if (currentDepth < waterNivelY)
         {
             float percentageDepth = Mathf.Abs(currentDepth) / Mathf.Abs(maxDepthSunlight);
-            Debug.Log(percentageDepth);
-            RenderSettings.skybox.Lerp(skyboxUnderwater, skyboxDeepUnderwater, percentageDepth);
+            // Need to re-Instanciate another Materiel, or else it will rewrite the data on the reference one
+            Material dummySkybox = Instantiate(skyboxUnderwater);
+            dummySkybox.Lerp(skyboxUnderwater, skyboxDeepUnderwater, percentageDepth);
+            RenderSettings.skybox = dummySkybox;
         } else
         {
-            Debug.Log("Surface !");
             RenderSettings.skybox = skyboxSurface;
         }
     }

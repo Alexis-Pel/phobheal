@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class Cage : MonoBehaviour
 {
