@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 944241758}
   player_locomotion: {fileID: 816315893}
+  canva: {fileID: 3054715266472502845, guid: 0b2c7441de24a42059d1ed3ab06b58ee, type: 3}
 --- !u!4 &939880859
 Transform:
   m_ObjectHideFlags: 0

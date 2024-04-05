@@ -26,6 +26,8 @@ public class Acrophobia : MonoBehaviour
             case 2:
                 break;
             case 3:
+                break;
+            case 4:
                 gameManager.GetComponent<GameManager>().WinGame();
                 break;
             default:
