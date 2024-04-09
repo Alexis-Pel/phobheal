@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
-  m_Shader: {fileID: 4800000, guid: 245980a9b43b46540a6e9afc65811acb, type: 3}
+  m_Name: Ground
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -59,46 +59,25 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _texcoord:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distance: 5
-    - _DistortionForce: 0.1
-    - _DistortionNoiseScale: 1000
-    - _DistortionSpeed: 0.0005
     - _DstBlend: 0
-    - _FoamAmount: 0.3
-    - _FoamCutoff: 0.66
-    - _FoamNoiseScale: 210
-    - _FoamNoiseSpeed: 0.002
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 1
+    - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
-    - _SparkleIntensity: 0
-    - _SparkleSmoothing: 0.1
-    - _SparkleTreshold: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ViewAngleSparkleReduction: 0.95
     - _ZWrite: 1
-    - __dirty: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DeepColor: {r: 0.20135279, g: 0.4392157, b: 0.5283019, a: 0.65882355}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
-    - _ShallowColor: {r: 0.08608042, g: 0.4981287, b: 0.735849, a: 0.3568628}
   m_BuildTextureStacks: []
