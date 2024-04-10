@@ -60,12 +60,12 @@ public class Elevator : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         canMove = true;
-        other.transform.SetParent(transform);
+        other.transform.parent.SetParent(transform);
     }
 
     private void OnTriggerExit(Collider other)
     {
         canMove = false;
-        other.transform.SetParent(null);
+        other.transform.parent.SetParent(null);
     }
 }

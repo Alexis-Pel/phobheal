@@ -822,7 +822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &212869264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,8 +1206,8 @@ MonoBehaviour:
   myTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212869264}
-        m_TargetAssemblyTypeName: Acrophobia, Assembly-CSharp
+      - m_Target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: WinStep
         m_Mode: 1
         m_Arguments:
@@ -1362,7 +1362,7 @@ Transform:
   m_GameObject: {fileID: 367002001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.046814, y: 48.2, z: -42.60282}
+  m_LocalPosition: {x: -3.046814, y: 48, z: -42.60282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5346,8 +5346,8 @@ MonoBehaviour:
   myTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212869264}
-        m_TargetAssemblyTypeName: Acrophobia, Assembly-CSharp
+      - m_Target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: WinStep
         m_Mode: 1
         m_Arguments:
@@ -5804,9 +5804,9 @@ MonoBehaviour:
   myTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212869264}
-        m_TargetAssemblyTypeName: Acrophobia, Assembly-CSharp
-        m_MethodName: WinStep
+      - m_Target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: WinGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

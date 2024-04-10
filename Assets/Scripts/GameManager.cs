@@ -32,13 +32,19 @@ public class GameManager : MonoBehaviour
     {
         // TODO: Show win screen
         Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        //Invoke(nameof(StopGame), 5f);
+        Invoke(nameof(StopGame), 5f);
     }
 
-    public void StopGame()
+    private void StopGame()
     {
         // TODO: Stop the game -> Return to menu ?
         ReturnToMenu();
+    }
+
+
+    public void WinStep()
+    {
+        // TODO: Win Step
     }
 
     /// <summary>

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Acrophobia : MonoBehaviour
 {
@@ -15,24 +16,12 @@ public class Acrophobia : MonoBehaviour
     void Start()
     {
         // player = GameObject.FindGameObjectsWithTag("Player")[0];
-        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        // gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
     }
 
-    public void WinStep()
+    public void WinGame()
     {
-        step++;
-        switch (step)
-        {
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                gameManager.GetComponent<GameManager>().WinGame();
-                break;
-            default:
-                break;
-        }
+        gameManager.GetComponent<GameManager>().WinGame();
     }
 
 }
