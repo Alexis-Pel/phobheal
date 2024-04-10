@@ -18,7 +18,7 @@ public class Cage : MonoBehaviour
         transform.position = new Vector3(transform.position.x, Mathf.Max(depthGoal, Mathf.Min(newHeight, maxHeight)), transform.position.z);
         if (transform.position.y == depthGoal)
         {
-            Debug.Log("Victory !!");
+            GameManager.Instance.WinGame();
         }
     }
 
