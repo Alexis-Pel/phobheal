@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cage : MonoBehaviour
+public class GoalElevator : MonoBehaviour
 {
     [SerializeField] private float offsetHeight;
 
