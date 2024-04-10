@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private ScenesEnum currentScenarioIndex;
     public GameObject player;
     public GameObject player_locomotion;
+    public GameObject canva;
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +31,20 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         // TODO: Show win screen
+        Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
+        Invoke(nameof(StopGame), 5f);
     }
 
-    public void StopGame()
+    private void StopGame()
     {
         // TODO: Stop the game -> Return to menu ?
         ReturnToMenu();
+    }
+
+
+    public void WinStep()
+    {
+        // TODO: Win Step
     }
 
     /// <summary>

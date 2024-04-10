@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Acrophobia : MonoBehaviour
 {
@@ -8,24 +9,19 @@ public class Acrophobia : MonoBehaviour
     private Vector3 secondStepPosition;
 
     private GameObject player;
+    private GameObject gameManager;
     private int step = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectsWithTag("Player")[0];
-        // TODO: Override All functions
+        // player = GameObject.FindGameObjectsWithTag("Player")[0];
+        // gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
     }
 
-    public void WinStep()
+    public void WinGame()
     {
-        player.transform.position = secondStepPosition;
-        step++;
-        switch (step)
-        {
-            case 2:
-                break;
-        }
+        gameManager.GetComponent<GameManager>().WinGame();
     }
 
 }
