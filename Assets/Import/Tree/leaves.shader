@@ -29,12 +29,16 @@ Shader "Custom/Leaves"
             {
                 float4 vertex   : POSITION;
                 float2 texcoord : TEXCOORD0;
+    
+                UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
             };
 
             struct v2f 
             {
                 float4 vertex  : SV_POSITION;
                 half2 texcoord : TEXCOORD0;
+    
+                UNITY_VERTEX_OUTPUT_STEREO //Insert
             };
 
             sampler2D _MainTex;
@@ -44,6 +48,10 @@ Shader "Custom/Leaves"
             v2f vert (appdata_t v)
             {
                 v2f o;
+    
+                UNITY_SETUP_INSTANCE_ID(v); //Insert
+                UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
 
                 o.vertex     = UnityObjectToClipPos(v.vertex);
                 v.texcoord.x = 1 - v.texcoord.x;

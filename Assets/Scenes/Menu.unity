@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -816,7 +816,7 @@ MonoBehaviour:
   phobiaCard: {fileID: 8848904429531750316, guid: de1fd983d3d0c1244a65651d3f58520e, type: 3}
   phobias:
   - {fileID: 11400000, guid: 666a55bf0096b004cb844383d853d7ed, type: 2}
-  - {fileID: 11400000, guid: c579bae6e13d42544bc1cb8eba998de8, type: 2}
+  - {fileID: 11400000, guid: 10be6b0a32f8d514c9d38030900e4d33, type: 2}
 --- !u!4 &1263572768
 Transform:
   m_ObjectHideFlags: 0
