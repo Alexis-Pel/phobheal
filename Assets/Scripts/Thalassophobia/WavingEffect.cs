@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Boat : MonoBehaviour
+public class WavingEffect : MonoBehaviour
 {
     [SerializeField] private float heightProcessTime;
     [SerializeField] private float heightLimit;
