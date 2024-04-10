@@ -828,6 +828,10 @@ PrefabInstance:
       value: Cage
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: depthGoal
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: controller
       value: 
       objectReference: {fileID: 0}
