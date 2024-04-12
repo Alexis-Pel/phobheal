@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Destination_001
+  - Destination_002
+  - Destination_003
+  - Destination_004
+  - Destination_005
+  - Destination_006
+  - Destination_007
   layers:
   - Default
   - TransparentFX
@@ -11,6 +18,12 @@ TagManager:
   - 
   - Water
   - UI
+  - Destination
+  - AI_001
+  - Player
+  - Obstacle
+  - AI_002
+  - AI_003
   - Elevator
   - Post
   - 
