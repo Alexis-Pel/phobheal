@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private ScenesEnum currentScenarioIndex;
-    public GameObject player;
-    public GameObject player_locomotion;
     public GameObject canva;
 
     public static GameManager Instance; // A static reference to the GameManager instance
@@ -16,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null) // If there is no instance already
         {
+            DontDestroyOnLoad(gameObject);
             Instance = this;
         }
         else if (Instance != this) // If there is already an instance and it's not `this` instance
@@ -58,18 +57,6 @@ public class GameManager : MonoBehaviour
         // TODO: Win Step
     }
 
-    /// <summary>
-    /// Change current scenario
-    /// </summary>
-    /// <param name="newScenario">the name of the scene to be loaded</param>
-    public void ChangeScenario(ScenesEnum scene)
-    {
-        // Reinitialisation position joueur ? -> Fondu au noir
-        UnloadCurrentScenario();
-        LoadNewScenario((int) scene);
-        currentScenarioIndex = scene;
-    }
-
 
     /**
      * 
@@ -80,18 +67,6 @@ public class GameManager : MonoBehaviour
     private void ReturnToMenu()
     {
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
-    }
-
-    private void UnloadCurrentScenario()
-    {
-        SceneManager.UnloadSceneAsync(((int)currentScenarioIndex));
-    }
-
-    private void LoadNewScenario(int scene)
-    {
-        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
-        SceneManager.MoveGameObjectToScene(player, SceneManager.GetSceneAt(scene));
-        player.transform.position = Settings.startPosition;
     }
 
     // public delegate void Delegate();
