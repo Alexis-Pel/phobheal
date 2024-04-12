@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GoalElevator : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class GoalElevator : MonoBehaviour
     // Will be remove once the change of difficulties is finished
     [SerializeField] private float heightStart;
     [SerializeField] private float heightGoal;
+
+    [SerializeField] private UnityEvent goalEvent;
 
     private float modifier;
     private bool _isDiving;
@@ -24,13 +27,14 @@ public class GoalElevator : MonoBehaviour
     void Update()
     {
         float newHeight = transform.position.y + GetOffset();
+
         //Depends if the goal is to go up or go down
-        float encloseHeight = Mathf.Max(_isDiving ? heightStart : heightGoal, Mathf.Min(newHeight, _isDiving ? heightGoal : heightStart));
+        float encloseHeight = Mathf.Max(_isDiving ? heightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : heightGoal));
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
 
         if (transform.position.y == heightGoal)
         {
-            GameManager.Instance.WinGame();
+            goalEvent.Invoke();
         }
     }
 
