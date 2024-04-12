@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Claustrophobia
   m_EditorClassIdentifier: 
   m_name: Claustrophobie
-  m_scene: 2
+  m_scene: 3
   m_image: {fileID: 0}
+  m_StartPosition: {x: 0, y: 0, z: 0}
