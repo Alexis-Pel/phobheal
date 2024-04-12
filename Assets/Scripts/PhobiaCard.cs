@@ -31,6 +31,8 @@ public class PhobiaCard : MonoBehaviour
 
     public void GoToScenario()
     {
-        SceneManager.LoadScene(((int)phobiaScriptable.m_scene), LoadSceneMode.Single);
+        Settings.SceneToLoad = (int)phobiaScriptable.m_scene;
+        Settings.startPosition = phobiaScriptable.m_StartPosition;
+        SceneManager.LoadScene(phobiaScriptable.m_name, LoadSceneMode.Single);
     }
 }

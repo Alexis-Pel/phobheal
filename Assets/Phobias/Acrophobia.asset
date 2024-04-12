@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e166ff7e046cb8a4ea5ed118dbcb5200, type: 3}
   m_Name: Acrophobia
   m_EditorClassIdentifier: 
-  m_name: Acrophobie
+  m_name: Acrophobia
   m_scene: 1
   m_image: {fileID: 0}
+  m_StartPosition: {x: 38.02, y: 1, z: 61.77}
