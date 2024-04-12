@@ -98,7 +98,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _Exponent1: 50
-    - _Exponent2: 1
+    - _Exponent2: 50
     - _Exposure: 1.53
     - _GlossMapScale: 1
     - _Glossiness: 0.5
