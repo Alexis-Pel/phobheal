@@ -13,16 +13,19 @@ public class UnderwaterEffect : MonoBehaviour
 
     [SerializeField] private float maxDepthSunlight;
 
-    [SerializeField] private GameObject waterObject;
+    private float _waterNivelY;
 
-    private readonly float _waterNivelY = 0.35f;
+    private void Start()
+    {
+        _waterNivelY = transform.position.y;
+    }
 
     private void Update()
     {
         float currentDepth = mainCamera.transform.position.y;
         RenderSettings.fog = currentDepth < _waterNivelY;
         // Rotate the water plane. It's not seen on the other side, and to preserve performance, we define only 1 water surface
-        waterObject.transform.rotation = Quaternion.AngleAxis(currentDepth < _waterNivelY ? 180 : 0, Vector3.back);
+        transform.rotation = Quaternion.AngleAxis(currentDepth < _waterNivelY ? 180 : 0, Vector3.back);
 
         UpdateSkybox(currentDepth);
     }

@@ -222,77 +222,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5804510784034895006, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
   m_PrefabInstance: {fileID: 1300449064}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &791407376
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 791407377}
-  - component: {fileID: 791407379}
-  - component: {fileID: 791407380}
-  m_Layer: 7
-  m_Name: Water
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &791407377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791407376}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7856782255927783793}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &791407379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791407376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 6363b6b2c48a81e44884240025048584, type: 2}
-  isGlobal: 0
-  blendDistance: 0
-  weight: 1
-  priority: 0
---- !u!114 &791407380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791407376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a902d576927ae945b133779fec697f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1300449065}
-  skyboxSurface: {fileID: 2100000, guid: 41a355a077e37f548b29df146fc23222, type: 2}
-  skyboxUnderwater: {fileID: 2100000, guid: 46a5451334a18674bb9f9c600f37855f, type: 2}
-  skyboxDeepUnderwater: {fileID: 2100000, guid: bf78888f60efdde459a8c4e76cd588e8, type: 2}
-  startDepthFogColor: {r: 0.27450982, g: 0.5921569, b: 0.6431373, a: 1}
-  endDepthFogColor: {r: 0.16862746, g: 0.29803923, b: 0.34117648, a: 1}
-  maxDepthSunlight: 20
-  waterObject: {fileID: 1043653476}
 --- !u!4 &989045757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
@@ -1035,7 +964,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 791407377}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1663051402015214479, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_Name
@@ -1055,7 +984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1067,15 +996,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1092,19 +1021,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1663051402015214479, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7856782255927783798}
+    - targetCorrespondingSourceObject: {fileID: 1663051402015214479, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7856782255927783797}
   m_SourcePrefab: {fileID: 100100000, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
---- !u!4 &7856782255927783793 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8527965693924980055, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
-  m_PrefabInstance: {fileID: 7856782255927783792}
+--- !u!114 &7856782255927783797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043653476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 6363b6b2c48a81e44884240025048584, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!114 &7856782255927783798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043653476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a902d576927ae945b133779fec697f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1300449065}
+  skyboxSurface: {fileID: 2100000, guid: 41a355a077e37f548b29df146fc23222, type: 2}
+  skyboxUnderwater: {fileID: 2100000, guid: 46a5451334a18674bb9f9c600f37855f, type: 2}
+  skyboxDeepUnderwater: {fileID: 2100000, guid: bf78888f60efdde459a8c4e76cd588e8, type: 2}
+  startDepthFogColor: {r: 0.27450982, g: 0.5921569, b: 0.6431373, a: 1}
+  endDepthFogColor: {r: 0.16862746, g: 0.29803923, b: 0.34117648, a: 1}
+  maxDepthSunlight: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 223313991}
   - {fileID: 7473427842853277663}
-  - {fileID: 791407377}
+  - {fileID: 7856782255927783792}
   - {fileID: 2409124857913833129}
   - {fileID: 1344830692}
