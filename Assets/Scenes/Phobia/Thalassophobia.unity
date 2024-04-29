@@ -290,9 +290,9 @@ MonoBehaviour:
   skyboxSurface: {fileID: 2100000, guid: 41a355a077e37f548b29df146fc23222, type: 2}
   skyboxUnderwater: {fileID: 2100000, guid: 46a5451334a18674bb9f9c600f37855f, type: 2}
   skyboxDeepUnderwater: {fileID: 2100000, guid: bf78888f60efdde459a8c4e76cd588e8, type: 2}
-  startDepthFogColor: {r: 0.27450982, g: 0.40392157, b: 0.42352942, a: 1}
+  startDepthFogColor: {r: 0.27450982, g: 0.5921569, b: 0.6431373, a: 1}
   endDepthFogColor: {r: 0.16862746, g: 0.29803923, b: 0.34117648, a: 1}
-  maxDepthSunlight: 25
+  maxDepthSunlight: 20
 --- !u!4 &989045757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
