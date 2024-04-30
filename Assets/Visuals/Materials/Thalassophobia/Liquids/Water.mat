@@ -69,14 +69,14 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Distance: 1
-    - _DistortionForce: 0.05
-    - _DistortionNoiseScale: 5000
+    - _DistortionForce: 0.125
+    - _DistortionNoiseScale: 2500
     - _DistortionSpeed: 0.0005
     - _DstBlend: 0
-    - _FoamAmount: 0.3
-    - _FoamCutoff: 0.66
+    - _FoamAmount: 0.5
+    - _FoamCutoff: 150
     - _FoamNoiseScale: 250
-    - _FoamNoiseSpeed: 0.002
+    - _FoamNoiseSpeed: 0.0025
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -84,21 +84,21 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
-    - _SparkleIntensity: 0
+    - _SparkleIntensity: 1
     - _SparkleSmoothing: 0.1
     - _SparkleTreshold: 1.35
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ViewAngleSparkleReduction: 0.95
+    - _ViewAngleSparkleReduction: 0.1
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DeepColor: {r: 0.20135272, g: 0.43921563, b: 0.5283019, a: 0.84313726}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.28793165, g: 0.31719375, b: 0.4528302, a: 1}
-    - _ShallowColor: {r: 0.086080305, g: 0.4981286, b: 0.735849, a: 0.78431374}
+    - _FoamColor: {r: 0.3254902, g: 0.21176471, b: 0.56078434, a: 1}
+    - _ShallowColor: {r: 0.04955499, g: 0.20916247, b: 0.3018868, a: 0.8509804}
   m_BuildTextureStacks: []
