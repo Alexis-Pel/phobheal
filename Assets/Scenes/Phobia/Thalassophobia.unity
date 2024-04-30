@@ -913,6 +913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
+    - target: {fileID: 3685890069619271376, guid: 458a6d2279db76346b2f7b52ab119ef1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4065969611659263082, guid: 458a6d2279db76346b2f7b52ab119ef1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
