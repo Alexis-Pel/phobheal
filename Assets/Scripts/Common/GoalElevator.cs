@@ -24,7 +24,7 @@ public class GoalElevator : MonoBehaviour
         _isDiving = heightGoal < heightStart;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float newHeight = transform.position.y + GetOffset();
 
