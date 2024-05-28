@@ -31,7 +31,7 @@ public class FishSpawn : MonoBehaviour
         if (!water.IsUnderWater() || fishGroups.Count >= maxNbFishGroup) return;
 
         GameObject fish = fishModel[Random.Range(0, fishModel.Length - 1)]; // Generate a random gameObject from the list
-        GameObject fishGroup = Instantiate(fish, GenerateCoord(), Quaternion.Euler(new Vector3(0f, Random.Range(0f, 360f), 0f)));
+        GameObject fishGroup = Instantiate(fish, GenerateCoord(), Quaternion.Euler(new Vector3(0f, Random.Range(0f, 360f), 0f)), transform);
 
         fishGroups.Add(fishGroup);
     }
@@ -42,7 +42,6 @@ public class FishSpawn : MonoBehaviour
         float distance2D = Random.Range(minDistanceSpawn, maxDistanceSpawn);
         Vector2 coord = RandomExtends.OnUnitCircle() * distance2D;
         Vector3 genCoord = new (coord.x + cage.transform.position.x, Random.Range(cage.HeightGoal, water.WaterNivelY), coord.y + cage.transform.position.z);
-        Debug.Log(genCoord);
         return genCoord;
     }
 }

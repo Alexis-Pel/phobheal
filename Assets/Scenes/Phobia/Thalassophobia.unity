@@ -1028,8 +1028,8 @@ MonoBehaviour:
   cage: {fileID: 1927518693}
   minDistanceSpawn: 6
   maxDistanceSpawn: 10
-  spawnSpeed: 0.1
-  maxNbFishGroup: 15
+  spawnSpeed: 0.5
+  maxNbFishGroup: 30
 --- !u!1 &1360337985
 GameObject:
   m_ObjectHideFlags: 0
