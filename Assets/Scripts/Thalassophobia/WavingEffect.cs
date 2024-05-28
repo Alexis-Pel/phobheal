@@ -8,11 +8,6 @@ public class WavingEffect : MonoBehaviour
     [SerializeField] private Vector3 angleLimit = Vector3.zero;
     [SerializeField] private AnimationCurve animationCurve;
 
-    private float FromPercentage(float max, float percentage)
-    {
-        return max * percentage;
-    }
-
     private void Start()
     {
         animationCurve.postWrapMode = WrapMode.PingPong;
@@ -22,14 +17,15 @@ public class WavingEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 angleOffset = new Vector3(
-            angleLimit.x != 0 ? FromPercentage(angleLimit.x, animationCurve.Evaluate(Time.time / angleProcessTime.x)) : transform.rotation.eulerAngles.x,
-            angleLimit.y != 0 ? FromPercentage(angleLimit.y, animationCurve.Evaluate(Time.time / angleProcessTime.y)) : transform.rotation.eulerAngles.y,
-            angleLimit.z != 0 ? FromPercentage(angleLimit.z, animationCurve.Evaluate(Time.time / angleProcessTime.z)) : transform.rotation.eulerAngles.z
+        Vector3 angleOffset = new (
+            angleLimit.x != 0 ? angleLimit.x * animationCurve.Evaluate(Time.time / angleProcessTime.x) : transform.localRotation.eulerAngles.x,
+            angleLimit.y != 0 ? angleLimit.y * animationCurve.Evaluate(Time.time / angleProcessTime.y) : transform.localRotation.eulerAngles.y,
+            angleLimit.z != 0 ? angleLimit.z * animationCurve.Evaluate(Time.time / angleProcessTime.z) : transform.localRotation.eulerAngles.z
         );
-        transform.SetPositionAndRotation(
-            new Vector3(transform.position.x, FromPercentage(heightLimit, animationCurve.Evaluate(Time.time / heightProcessTime)), transform.position.z),
-            Quaternion.Euler(angleOffset)
-        );
+
+        float height = heightLimit != 0 ? heightLimit * animationCurve.Evaluate(Time.time / heightProcessTime) : transform.position.y;
+        transform.position = new Vector3(transform.position.x, height, transform.position.z);
+
+        transform.localRotation = Quaternion.Euler(angleOffset);
     }
 }
