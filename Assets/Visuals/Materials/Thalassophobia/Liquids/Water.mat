@@ -75,8 +75,8 @@ Material:
     - _DstBlend: 0
     - _FoamAmount: 0.5
     - _FoamCutoff: 150
-    - _FoamNoiseScale: 250
-    - _FoamNoiseSpeed: 0.0025
+    - _FoamNoiseScale: 0
+    - _FoamNoiseSpeed: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -99,6 +99,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DeepColor: {r: 0.20135272, g: 0.43921563, b: 0.5283019, a: 0.84313726}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.3254902, g: 0.21176471, b: 0.56078434, a: 1}
+    - _FoamColor: {r: 0.32549012, g: 0.2117646, b: 0.5607843, a: 0}
     - _ShallowColor: {r: 0.04955499, g: 0.20916247, b: 0.3018868, a: 0.8509804}
   m_BuildTextureStacks: []
