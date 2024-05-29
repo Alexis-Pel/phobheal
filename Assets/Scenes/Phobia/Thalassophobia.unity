@@ -1023,8 +1023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: {fileID: 7856782255927783798}
   fishModel:
-  - {fileID: 6523568707496860426, guid: 6d4ef9c4d202756499690c08631bbe60, type: 3}
-  - {fileID: 7315134061831042651, guid: eceb003f3c01ea246a44b66117432a6c, type: 3}
+  - {fileID: 8772033135219089459, guid: e189a5c3b6d092b429796c596f14d9a1, type: 3}
+  - {fileID: 7722227617377162349, guid: 3d1001695a57d914d9ae5879b2bacfd5, type: 3}
   cage: {fileID: 1927518693}
   minDistanceSpawn: 6
   maxDistanceSpawn: 10
