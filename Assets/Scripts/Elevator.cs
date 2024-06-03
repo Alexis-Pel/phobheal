@@ -34,6 +34,7 @@ public class Elevator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         canMove = true;
         other.transform.parent.SetParent(transform);
     }
