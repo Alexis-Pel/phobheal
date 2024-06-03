@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Utils;
 
@@ -12,28 +10,21 @@ public class FishSpawn : MonoBehaviour
 
     [SerializeField] private float minDistanceSpawn;
     [SerializeField] private float maxDistanceSpawn;
-    [SerializeField] private float spawnSpeed;
-
-    [SerializeField] private int maxNbFishGroup;
-    private List<GameObject> fishGroups;
 
     // See if the fishgroups has a time limite before disapearing -> can regenerate one at a different location
     // maybe create a different script that manage each group individualy. That way this script does not do it (like their movement)
 
-    private void Start()
+    public void StartSpawn(float spawnSpeed)
     {
-        fishGroups = new List<GameObject>();
         InvokeRepeating(nameof(SpawnFishes), 0f, spawnSpeed);
     }
 
     private void SpawnFishes()
     {
-        if (!water.IsUnderWater() || fishGroups.Count >= maxNbFishGroup) return;
+        if (!water.IsUnderWater()) return;
 
         GameObject fish = fishModel[Random.Range(0, fishModel.Length)]; // Generate a random gameObject from the list
-        GameObject fishGroup = Instantiate(fish, GenerateCoord(), Quaternion.Euler(new Vector3(fish.transform.rotation.eulerAngles.x, Random.Range(0f, 360f), fish.transform.rotation.eulerAngles.z)), transform);
-
-        fishGroups.Add(fishGroup);
+        Instantiate(fish, GenerateCoord(), Quaternion.Euler(new Vector3(fish.transform.rotation.eulerAngles.x, Random.Range(0f, 360f), fish.transform.rotation.eulerAngles.z)), transform);
     }
 
     //Generate a random distance from the cage then generate a fish on a random point on the sphere the distance describe
