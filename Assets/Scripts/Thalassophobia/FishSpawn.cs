@@ -32,8 +32,11 @@ public class FishSpawn : MonoBehaviour
     {
         float distance2D = Random.Range(minDistanceSpawn, maxDistanceSpawn);
         Vector2 coord = RandomExtends.OnUnitCircle() * distance2D;
-        float height = Random.Range(cage.HeightGoal, water.WaterNivelY);
-        Vector3 genCoord = new (coord.x + cage.transform.position.x, height, coord.y + cage.transform.position.z);
+        Vector3 genCoord = new(coord.x + cage.transform.position.x, 0, coord.y + cage.transform.position.z);
+
+        float minHeight = Terrain.activeTerrain.SampleHeight(genCoord);
+        float height = Random.Range(minHeight, water.WaterNivelY);
+        genCoord.y = height;
         return genCoord;
     }
 }
