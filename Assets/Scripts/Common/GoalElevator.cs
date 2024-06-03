@@ -7,7 +7,7 @@ public class GoalElevator : MonoBehaviour
 
     // Will be remove once the change of difficulties is finished
     [SerializeField] private float heightStart;
-    [SerializeField] private float heightGoal;
+    [field: SerializeField] public float HeightGoal { get; private set; }
 
     [SerializeField] private UnityEvent goalEvent;
 
@@ -21,18 +21,18 @@ public class GoalElevator : MonoBehaviour
 
     private void Start()
     {
-        _isDiving = heightGoal < heightStart;
+        _isDiving = HeightGoal < heightStart;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float newHeight = transform.position.y + GetOffset();
 
         //Depends if the goal is to go up or go down
-        float encloseHeight = Mathf.Max(_isDiving ? heightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : heightGoal));
+        float encloseHeight = Mathf.Max(_isDiving ? HeightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : HeightGoal));
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
 
-        if (transform.position.y == heightGoal)
+        if (transform.position.y == HeightGoal)
         {
             goalEvent.Invoke();
         }

@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
 
     private void ReturnToMenu()
     {
+        CancelInvoke();
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
 

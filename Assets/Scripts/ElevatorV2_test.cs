@@ -8,7 +8,7 @@ public class ElevatorV2_test : MonoBehaviour
     [SerializeField] private float heightGoal;
 
     public XRSlider slider;
-
+    public AudioSource audioSource;
     public float speed;
     private Vector3 newpos;
 
@@ -21,18 +21,35 @@ public class ElevatorV2_test : MonoBehaviour
 
     public void changeSpeed()
     {
-        this.speed = slider.value * 10;
+        speed = slider.value * 10;
+        if (speed == 0)
+        {
+            StopClip();
+            PlayCLip();
+            Invoke(nameof(StopClip), 1f);
+        }
     }
 
     void Update()
     {
+        //if(speed == 0) { return; }
 
         transform.position = Vector3.MoveTowards(transform.position, newpos, speed * Time.deltaTime);
-        print(heightGoal + " " + transform.position.y);
 
         if (transform.position.y >= heightGoal)
         {
+            speed = 0;
             GameManager.Instance.WinGame();
         }
+    }
+
+    private void StopClip()
+    {
+        audioSource.Stop();
+    }
+
+    private void PlayCLip()
+    {
+        audioSource.Play();
     }
 }
