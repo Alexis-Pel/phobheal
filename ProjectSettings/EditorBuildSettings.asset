@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 3d6db0f7419879c468974344fbb9d1d7
   - enabled: 1
-    path: Assets/Scenes/Acrophobia.unity
-    guid: e521534aa184f47f6b0c99a1d9d3bb11
+    path: Assets/Scenes/AcrophobiaV2.unity
+    guid: b939a77df0739744a92429964a1137a0
   - enabled: 1
     path: Assets/Scenes/Phobia/Thalassophobia.unity
     guid: 44b73976e393dc84d92d6b32111cca8a
