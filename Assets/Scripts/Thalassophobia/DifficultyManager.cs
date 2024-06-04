@@ -9,6 +9,9 @@ public class DifficultyManager : MonoBehaviour
 
     [SerializeField] private GoalElevator cage;
     [SerializeField] private FishSpawn seaFloor;
+    [SerializeField] private Canvas menu;
+
+    public bool IsValidate { get; private set; }
 
     public void SetPlayerObjective(float playerObjective) => this.playerObjective = playerObjective;
     public void SetFogDistanceStart(float fogEndDistance) => this.fogEndDistance = fogEndDistance;
@@ -16,6 +19,7 @@ public class DifficultyManager : MonoBehaviour
 
     public void ValidDifficulty()
     {
+        menu.enabled = false;
         #region playerObjective
         cage.HeightGoal = playerObjective;
         seaFloor.transform.position = new Vector3(seaFloor.transform.position.x, playerObjective, seaFloor.transform.position.z);
@@ -28,5 +32,7 @@ public class DifficultyManager : MonoBehaviour
         #region FaunaDensity
         seaFloor.StartSpawn(speedSpawnFish * faunaDensity);
         #endregion
+
+        IsValidate = true;
     }
 }
