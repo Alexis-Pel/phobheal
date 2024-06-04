@@ -3,7 +3,7 @@ using UnityEngine;
 public class DifficultyManager : MonoBehaviour
 {
     [SerializeField] private float playerObjective = -50f;
-    [SerializeField] private float fogDistanceStart = 25f;
+    [SerializeField] private float fogEndDistance = 25f;
     [SerializeField] private float faunaDensity = 1f;
     [SerializeField] private float speedSpawnFish = 0.5f;
 
@@ -11,7 +11,7 @@ public class DifficultyManager : MonoBehaviour
     [SerializeField] private FishSpawn seaFloor;
 
     public void SetPlayerObjective(float playerObjective) => this.playerObjective = playerObjective;
-    public void SetFogDistanceStart(float fogDistanceStart) => this.fogDistanceStart = fogDistanceStart;
+    public void SetFogDistanceStart(float fogEndDistance) => this.fogEndDistance = fogEndDistance;
     public void SetFaunaDensity(float faunaDensity) => this.faunaDensity = faunaDensity;
 
     public void ValidDifficulty()
@@ -22,7 +22,7 @@ public class DifficultyManager : MonoBehaviour
         #endregion
 
         #region fogDistance
-        RenderSettings.fogStartDistance = fogDistanceStart;
+        RenderSettings.fogEndDistance = fogEndDistance;
         #endregion
 
         #region FaunaDensity
