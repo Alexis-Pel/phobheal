@@ -34,7 +34,9 @@ public class FishSpawn : MonoBehaviour
         Vector2 coord = RandomExtends.OnUnitCircle() * distance2D;
         Vector3 genCoord = new(coord.x + cage.transform.position.x, 0, coord.y + cage.transform.position.z);
 
-        float minHeight = Terrain.activeTerrain.SampleHeight(genCoord);
+        // Need to add the cage goal because the fish will spawn as child of this spawner, and it's located beneath the sea
+        // A lil' conflict between local and global location
+        float minHeight = Terrain.activeTerrain.SampleHeight(genCoord) + cage.HeightGoal;
         float height = Random.Range(minHeight, water.WaterNivelY);
         genCoord.y = height;
         return genCoord;

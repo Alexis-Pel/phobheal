@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DifficultyManager : MonoBehaviour
 {
+    [SerializeField] private bool debug = false;
+
     [SerializeField] private float playerObjective = -50f;
     [SerializeField] private float fogEndDistance = 25f;
     [SerializeField] private float faunaDensity = 1f;
@@ -12,6 +14,11 @@ public class DifficultyManager : MonoBehaviour
     [SerializeField] private Canvas menu;
 
     public bool IsValidate { get; private set; }
+
+    private void Start()
+    {
+        if (debug) ValidDifficulty();
+    }
 
     public void SetPlayerObjective(float playerObjective) => this.playerObjective = playerObjective;
     public void SetFogDistanceStart(float fogEndDistance) => this.fogEndDistance = fogEndDistance;

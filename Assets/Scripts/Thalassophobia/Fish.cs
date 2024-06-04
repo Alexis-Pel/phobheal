@@ -19,6 +19,6 @@ public class Fish : MonoBehaviour
     }
     private void SelfDestruct()
     {
-        Destroy(gameObject);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 }
