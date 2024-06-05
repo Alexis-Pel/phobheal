@@ -18,7 +18,7 @@ public class instruction : MonoBehaviour
                 break;
 
             default:
-                message = "BIG NOOB";
+                message = Settings.experienceInstruction;
                 break;
         }
         instructionMessagePlaceholder.text = message;
