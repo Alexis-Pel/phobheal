@@ -1,9 +1,10 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DifficultyManager : MonoBehaviour
 {
     [SerializeField] private bool debug = false;
-
     [SerializeField] private float playerObjectiveBase = -50f;
     [SerializeField] private float fogEndDistanceBase = 15f;
     [SerializeField] private float faunaDensityBase = 1f;
@@ -27,9 +28,27 @@ public class DifficultyManager : MonoBehaviour
         if (debug) ValidDifficulty();
     }
 
-    public void SetPlayerObjective(float coeff) => this.PlayerObjective = playerObjectiveBase + playerObjectiveBase * coeff;
-    public void SetFogDistanceEnd(float coeff) => this.FogEndDistance = fogEndDistanceBase + fogEndDistanceBase * coeff;
-    public void SetFaunaDensity(float coeff) => this.FaunaDensity = coeff;
+    public void SetPlayerObjective(float coeff)
+    {
+        PlayerObjective = playerObjectiveBase + playerObjectiveBase * coeff;
+        //DynamicText(PlayerObjective, textElt);
+    }
+    public void SetFogDistanceEnd(float coeff)
+    {
+        FogEndDistance = fogEndDistanceBase + fogEndDistanceBase * coeff;
+        //DynamicText(FogEndDistance, textElt);
+    }
+    public void SetFaunaDensity(float coeff)
+    {
+        FaunaDensity = coeff;
+        //DynamicText(FaunaDensity, textElt);
+    }
+
+    public void DynamicText(float value, TextMeshPro textElt = null)
+    {
+        if (textElt == null) return;
+        textElt.text = value.ToString();
+    }
 
     public void ValidDifficulty()
     {
