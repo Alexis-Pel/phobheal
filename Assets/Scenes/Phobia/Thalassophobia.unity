@@ -2969,7 +2969,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brouillard
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6364431997872833507, guid: 855742c7117da5b43b3257881edacef9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
