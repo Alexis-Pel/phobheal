@@ -2815,6 +2815,10 @@ PrefabInstance:
       propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GoalElevator, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7620773682999021510, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af0ee94bda82ccc4a871b71464d5859c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
