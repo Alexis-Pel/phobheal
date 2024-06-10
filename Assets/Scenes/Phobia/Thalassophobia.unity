@@ -333,6 +333,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 373002472}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &71398076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +527,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4933144641964563070, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: difficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: 4419e113b78df2a4c85b9d42047ef470, type: 2}
     - target: {fileID: 5953027600287780713, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Name
       value: Profondeur
@@ -2139,6 +2155,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4933144641964563070, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: difficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: 8a1cf52d2a3db7f4fa753716874070e5, type: 2}
     - target: {fileID: 5953027600287780713, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Name
       value: Faune
@@ -2426,13 +2446,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debug: 0
-  playerObjectiveBase: -50
-  fogEndDistanceBase: 15
-  faunaDensityBase: 1
-  speedSpawnFishBase: 0.5
   cage: {fileID: 1927518693}
   seaFloor: {fileID: 1344830693}
-  menu: {fileID: 373002476}
+  fog: {fileID: 11400000, guid: 44b743149423846449a65e851ed68c24, type: 2}
+  depth: {fileID: 11400000, guid: 4419e113b78df2a4c85b9d42047ef470, type: 2}
+  faunaDensity: {fileID: 11400000, guid: 8a1cf52d2a3db7f4fa753716874070e5, type: 2}
 --- !u!1001 &2409124857913833129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2797,6 +2815,10 @@ PrefabInstance:
       propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GoalElevator, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7620773682999021510, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af0ee94bda82ccc4a871b71464d5859c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2827,7 +2849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 93984232673936264, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 93984232673936264, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2965,6 +2987,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4933144641964563070, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: difficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: 44b743149423846449a65e851ed68c24, type: 2}
     - target: {fileID: 5953027600287780713, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Name
       value: Brouillard
