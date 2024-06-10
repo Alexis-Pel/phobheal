@@ -18,7 +18,7 @@ public class SwitchScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(gameManager._isElectricMeterOn);
+        //Debug.Log(gameManager._isElectricMeterOn);
         if (gameManager != null && gameManager._isElectricMeterOn)
         {
             _isOn = true;
