@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Acrophobia
   m_EditorClassIdentifier: 
   m_name: Acrophobia
-  m_scene: 1
+  m_scene: 2
   m_image: {fileID: 0}
   m_StartPosition: {x: 38.02, y: 1, z: 61.77}
