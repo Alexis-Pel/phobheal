@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ElectricMeterScript : MonoBehaviour
 {
-    [SerializeField]
-    private bool _isOn;
+    public bool _isOn;
 
     [SerializeField]
     private List<GameObject> ElectricMeterSwitchs;
@@ -15,12 +14,14 @@ public class ElectricMeterScript : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> Lights;
+
+    private bool _isStarted = false;
     
     // Start is called before the first frame update
     void Start()
     {
         SwitchElectricity();
-        //ActualiseGameManagerIsOn();
+        ActualiseGameManagerIsOn();
     }
 
     // Update is called once per frame
@@ -43,10 +44,17 @@ public class ElectricMeterScript : MonoBehaviour
     }
 
     private void ActualiseGameManagerIsOn(){
-        gameManager._isElectricMeterOn = _isOn ? true : false;
+        //gameManager._isElectricMeterOn = _isOn ? true : false;
 
         foreach (GameObject Light in Lights){
             Light.SetActive(_isOn);
+            Light light = Light.GetComponent<Light>();
+            light.enabled = _isOn;
+            /*if(!_isStarted && _isOn){
+                Light light = Light.GetComponent<Light>();
+                light.enabled = _isOn;
+                _isStarted = true;
+            }*/
         }
     }
 }

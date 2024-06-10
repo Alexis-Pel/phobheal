@@ -10,8 +10,7 @@ public class SwitchScript : MonoBehaviour
     [SerializeField]
     private GameObject Switch;
 
-    [SerializeField]
-    private bool _isOn;
+    public bool _isOn;
 
     [SerializeField]
     private KenophobiaManager gameManager;
@@ -19,6 +18,7 @@ public class SwitchScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(gameManager._isElectricMeterOn);
         if (gameManager != null && gameManager._isElectricMeterOn)
         {
             _isOn = true;
