@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8527965693924980055}
   - component: {fileID: 2774121286983669423}
   - component: {fileID: 8014800817388518748}
-  - component: {fileID: 5337764696925670645}
+  - component: {fileID: 7635851525861821018}
+  - component: {fileID: 946819100032034982}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -84,25 +85,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5337764696925670645
-MeshCollider:
+--- !u!114 &7635851525861821018
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663051402015214479}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a902d576927ae945b133779fec697f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  skyboxSurface: {fileID: 2100000, guid: 41a355a077e37f548b29df146fc23222, type: 2}
+  skyboxUnderwater: {fileID: 2100000, guid: 46a5451334a18674bb9f9c600f37855f, type: 2}
+  skyboxDeepUnderwater: {fileID: 2100000, guid: bf78888f60efdde459a8c4e76cd588e8, type: 2}
+  startDepthFogColor: {r: 0.27450982, g: 0.5921569, b: 0.6431373, a: 1}
+  endDepthFogColor: {r: 0.16862746, g: 0.29803923, b: 0.34117648, a: 1}
+  maxDepthSunlight: 20
+--- !u!114 &946819100032034982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663051402015214479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 6363b6b2c48a81e44884240025048584, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0

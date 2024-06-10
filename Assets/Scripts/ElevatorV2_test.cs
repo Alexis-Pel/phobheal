@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.XR.Content.Interaction;
+using UnityEngine.Events;
 
 public class ElevatorV2_test : MonoBehaviour
 {
@@ -7,10 +7,10 @@ public class ElevatorV2_test : MonoBehaviour
     [SerializeField] private float heightStart;
     [SerializeField] private float heightGoal;
 
-    public XRSlider slider;
     public AudioSource audioSource;
     public float speed;
     private Vector3 newpos;
+    [SerializeField] private UnityEvent goalEvent;
 
     private void Start()
     {
@@ -19,15 +19,9 @@ public class ElevatorV2_test : MonoBehaviour
         newpos.y += heightGoal;
     }
 
-    public void changeSpeed()
+    public void SetModifier(float modifier)
     {
-        speed = slider.value * 10;
-        if (speed == 0)
-        {
-            StopClip();
-            PlayCLip();
-            Invoke(nameof(StopClip), 1f);
-        }
+        speed = modifier * 4;
     }
 
     void Update()
@@ -35,21 +29,11 @@ public class ElevatorV2_test : MonoBehaviour
         //if(speed == 0) { return; }
 
         transform.position = Vector3.MoveTowards(transform.position, newpos, speed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, heightStart, heightGoal), transform.position.z);
 
-        if (transform.position.y >= heightGoal)
+        if (transform.position.y == heightGoal)
         {
-            speed = 0;
-            GameManager.Instance.WinGame();
+            goalEvent.Invoke();
         }
-    }
-
-    private void StopClip()
-    {
-        audioSource.Stop();
-    }
-
-    private void PlayCLip()
-    {
-        audioSource.Play();
     }
 }
