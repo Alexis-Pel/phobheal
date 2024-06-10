@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FocusObject : MonoBehaviour
@@ -9,10 +7,12 @@ public class FocusObject : MonoBehaviour
 
     private Vector3 currentObjective;
     private int idCurrentObjective;
+    private Vector3? initPos = null;
 
     // Start is called before the first frame update
     void Start()
     {
+        initPos = transform.position;
         idCurrentObjective = 0;
         DefineObjective();
     }
@@ -35,5 +35,16 @@ public class FocusObject : MonoBehaviour
         if (idCurrentObjective >= objectives.Length) { idCurrentObjective = 0; }
         Vector3 mvt = objectives[idCurrentObjective];
         currentObjective = transform.position + mvt;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Vector3 oldObjective = initPos != null ? initPos.Value : transform.position;
+        for (int i = 0; i < objectives.Length; i++)
+        {
+            Vector3 currentPos = oldObjective + objectives[i];
+            Gizmos.DrawLine(currentPos, oldObjective);
+            oldObjective = currentPos;
+        }
     }
 }

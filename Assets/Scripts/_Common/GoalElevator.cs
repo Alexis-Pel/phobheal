@@ -7,17 +7,14 @@ public class GoalElevator : MonoBehaviour
 
     // Will be remove once the change of difficulties is finished
     [SerializeField] private float heightStart;
-    [field: SerializeField] public float HeightGoal { get; private set; }
+    public float HeightGoal;
 
     [SerializeField] private UnityEvent goalEvent;
 
     private float modifier;
     private bool _isDiving;
 
-    public void SetModifier(float modifier)
-    {
-        this.modifier = modifier;
-    }
+    public void SetModifier(float modifier) => this.modifier = modifier;
 
     private void Start()
     {

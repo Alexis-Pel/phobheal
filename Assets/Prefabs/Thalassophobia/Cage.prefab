@@ -644,7 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetHeight: 0
   heightStart: 0
-  heightGoal: 0
+  HeightGoal: 0
   goalEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1984,8 +1984,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8340916182286779144}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 1.125, z: 0.3}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.55, y: 1.125, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1994,7 +1994,7 @@ Transform:
   - {fileID: 6648579572285475107}
   - {fileID: 5838851705528190583}
   m_Father: {fileID: 3597721525055169792}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &8474323821321169603
 GameObject:
   m_ObjectHideFlags: 0
