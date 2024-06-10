@@ -281,6 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cars:
   - {fileID: 5990712293061577740, guid: 1a159a6851c914f82a782dadd958e647, type: 3}
+  - {fileID: 3639822499403466423, guid: 99b8581e346ff4112bf600ffda82a112, type: 3}
   speed: 60
   objective: -2083.8
 --- !u!65 &92676766
@@ -654,6 +655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cars:
   - {fileID: 5990712293061577740, guid: 1a159a6851c914f82a782dadd958e647, type: 3}
+  - {fileID: 3639822499403466423, guid: 99b8581e346ff4112bf600ffda82a112, type: 3}
   speed: 60
   objective: -1226
 --- !u!65 &547855426
