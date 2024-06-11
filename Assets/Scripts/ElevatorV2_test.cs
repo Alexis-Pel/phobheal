@@ -10,7 +10,6 @@ public class ElevatorV2_test : MonoBehaviour
     public AudioSource audioSource;
     public float speed;
     private Vector3 newpos;
-    [SerializeField] private UnityEvent goalEvent;
 
     private void Start()
     {
@@ -30,10 +29,5 @@ public class ElevatorV2_test : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, newpos, speed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, heightStart, heightGoal), transform.position.z);
-
-        if (transform.position.y == heightGoal)
-        {
-            goalEvent.Invoke();
-        }
     }
 }
