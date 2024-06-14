@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Acrophobia
   m_scene: 2
-  m_image: {fileID: 0}
+  m_image: {fileID: 21300000, guid: 0ebe5b6a74ffc8d489bbb53bfe610f07, type: 3}
   m_StartPosition: {x: 38.02, y: 1, z: 61.77}
