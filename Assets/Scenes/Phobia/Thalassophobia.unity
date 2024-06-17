@@ -1354,6 +1354,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 989045757}
     m_Modifications:
+    - target: {fileID: 60284653512913082, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60284653512913082, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 593529790576863667, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 200
@@ -2823,6 +2831,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: af0ee94bda82ccc4a871b71464d5859c, type: 2}
+    - target: {fileID: 7750331792730609302, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_NbState
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

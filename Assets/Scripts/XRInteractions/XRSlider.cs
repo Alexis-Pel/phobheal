@@ -31,21 +31,21 @@ namespace UnityEngine.XR.Content.Interaction
 
         [SerializeField]
         [Tooltip("Events to trigger when the slider is moved")]
-        ValueChangeEvent m_OnValueChange = new ValueChangeEvent();
+        ValueChangeEvent m_OnValueChange = new ();
+
+        [SerializeField]
+        [Tooltip("Number of state the slider can have between 0 and 1. '-1' if no state is needed to be used. Note: Min and Max value will also be used as state, no need to include those.")]
+        int m_NbState = -1;
 
         IXRSelectInteractor m_Interactor;
 
         /// <summary>
         /// The value of the slider
         /// </summary>
-        public float value
+        public float Value
         {
             get => m_Value;
-            set
-            {
-                SetValue(value);
-                SetSliderPosition(value);
-            }
+            set => UpdateSliderPosition(value);
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace UnityEngine.XR.Content.Interaction
         void StartGrab(SelectEnterEventArgs args)
         {
             m_Interactor = args.interactorObject;
-            UpdateSliderPosition();
+            UpdateSliderPositionGrab();
         }
 
         void EndGrab(SelectExitEventArgs args)
@@ -88,20 +88,27 @@ namespace UnityEngine.XR.Content.Interaction
         {
             base.ProcessInteractable(updatePhase);
 
-            if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic)
-            {
-                if (isSelected)
-                {
-                    UpdateSliderPosition();
-                }
-            }
+            if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic && isSelected) UpdateSliderPositionGrab();
         }
 
-        void UpdateSliderPosition()
+        void UpdateSliderPositionGrab()
         {
             // Put anchor position into slider space
             var localPosition = transform.InverseTransformPoint(m_Interactor.GetAttachTransform(this).position);
             var sliderValue = Mathf.Clamp01((localPosition.z - m_MinPosition) / (m_MaxPosition - m_MinPosition));
+            UpdateSliderPosition(sliderValue);
+        }
+
+        void UpdateSliderPosition(float sliderValue)
+        {
+            if (m_NbState >= 0)
+            {
+                //m_NbState can be interpreted has the number of additionnal slash we need to do to cut between 0 et 1
+                // if m_NbState == 0 -> no cut added but still 1 default cut to have 2 parts: the min and max
+                int nbPart = (m_NbState + 1);
+                sliderValue = Mathf.Round(sliderValue * nbPart) / nbPart;
+                Debug.Log(sliderValue);
+            }
             SetValue(sliderValue);
             SetSliderPosition(sliderValue);
         }
