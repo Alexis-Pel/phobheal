@@ -15,7 +15,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - UIOverlay
   - Water
   - UI
   - Destination
@@ -26,12 +26,6 @@ TagManager:
   - AI_003
   - Elevator
   - Post
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
