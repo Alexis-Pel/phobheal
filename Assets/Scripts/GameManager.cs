@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private ScenesEnum currentScenarioIndex;
     public GameObject canva;
+    public int totalSteps;
+
+    private ScenesEnum currentScenarioIndex;
+    private int stepCompleted = 0;
 
     [SerializeField] private GameObject pauseScreen;
     private bool gamePaused = false;
@@ -25,16 +26,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); // Destroy the GameObject, this component is attached to
     }
 
-    // Start is called before the first frame update
-    void Start()
+
+    public int StepCompleted
     {
+        get { return stepCompleted; }
+        // set { stepCompleted = value; }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /**
     *   
@@ -42,23 +40,24 @@ public class GameManager : MonoBehaviour
     * 
     */
 
+    public void StepDone()
+    {
+        print(stepCompleted);
+        stepCompleted++;
+
+        if (stepCompleted == totalSteps)
+        {
+            WinGame();
+        }
+
+        //TODO: Effets de complétion des étapes
+    }
+
     public void WinGame()
     {
         // TODO: Show win screen
         Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
         Invoke(nameof(StopGame), 5f);
-    }
-
-    public void StopGame()
-    {
-        // TODO: Stop the game -> Return to menu ?
-        ReturnToMenu();
-    }
-
-
-    public void WinStep()
-    {
-        // TODO: Win Step
     }
 
 
@@ -72,6 +71,11 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke();
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
+    }
+
+    private void StopGame()
+    {
+        ReturnToMenu();
     }
 
     // public delegate void Delegate();

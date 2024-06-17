@@ -25,14 +25,17 @@ public class PhobiaCard : MonoBehaviour
         }
         else
         {
+            print(phobiaScriptable.m_name);
+            print(phobiaScriptable.m_image);
             image.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
         }
     }
 
     public void GoToScenario()
     {
-        Settings.SceneToLoad = (int)phobiaScriptable.m_scene;
         Settings.startPosition = phobiaScriptable.m_StartPosition;
-        SceneManager.LoadScene(phobiaScriptable.m_name, LoadSceneMode.Single);
+        Settings.instructionNextScene = (int)phobiaScriptable.m_scene;
+
+        SceneManager.LoadScene(sceneName: "instructions");
     }
 }
