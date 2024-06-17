@@ -9,8 +9,7 @@ public class instruction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string message = "";
-
+        string message;
         switch (Settings.instructionNextScene)
         {
             case (int)ScenesEnum.MENU:
@@ -22,10 +21,9 @@ public class instruction : MonoBehaviour
                 break;
         }
         instructionMessagePlaceholder.text = message;
-        Invoke(nameof(nextScene), 15f);
     }
 
-    void nextScene()
+    public void nextScene()
     {
         SceneManager.LoadScene(Settings.instructionNextScene);
     }

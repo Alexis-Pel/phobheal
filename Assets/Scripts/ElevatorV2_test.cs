@@ -20,7 +20,8 @@ public class ElevatorV2_test : MonoBehaviour
 
     public void SetModifier(float modifier)
     {
-        speed = modifier * 4;
+        speed = (modifier - 0.5f) * 4;
+        print(speed);
     }
 
     void Update()
