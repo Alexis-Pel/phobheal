@@ -107,7 +107,6 @@ namespace UnityEngine.XR.Content.Interaction
                 // if m_NbState == 0 -> no cut added but still 1 default cut to have 2 parts: the min and max
                 int nbPart = (m_NbState + 1);
                 sliderValue = Mathf.Round(sliderValue * nbPart) / nbPart;
-                Debug.Log(sliderValue);
             }
             SetValue(sliderValue);
             SetSliderPosition(sliderValue);
