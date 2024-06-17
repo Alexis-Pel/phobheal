@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -608,6 +608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3186fdaad7ab44f9737e6ec1a8513b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phobiaScriptable: {fileID: 11400000, guid: c579bae6e13d42544bc1cb8eba998de8, type: 2}
+  phobiaScriptable: {fileID: 11400000, guid: 5447e760ac98a6f48945ac6356b88f26, type: 2}
   image: {fileID: 250406945954230056}
   phobiaNameUI: {fileID: 5760872090095976971}
