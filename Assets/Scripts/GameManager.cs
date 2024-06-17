@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
             WinGame();
         }
 
-        //TODO: Effets de complétion des étapes
+        //TODO: Effets de complï¿½tion des ï¿½tapes
     }
 
     public void WinGame()
@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
 
-    private void StopGame()
+    public void StopGame()
     {
         ReturnToMenu();
     }

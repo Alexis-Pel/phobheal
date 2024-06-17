@@ -13,6 +13,7 @@ public class ScenarioLightTurnScript : MonoBehaviour
     public SwitchScript Switch;
     public int nbLigth = 0;
     public List<SwitchScript> Switchs;
+    public KenophobiaManager kenophobiaManager;
 
     void Start(){
         ElectricMeter._isOn = true;
@@ -35,6 +36,8 @@ public class ScenarioLightTurnScript : MonoBehaviour
                             return true;
                         case 0:
                             return TriggersLights();
+                        case 1:
+                            return TriggersBedrooms();
                         default:
                             return ExampleStepOne();
                     }
@@ -59,6 +62,13 @@ public class ScenarioLightTurnScript : MonoBehaviour
             }
         }
         return nb_isOn == 0 ? true : false;
+    }
+
+    bool TriggersBedrooms(){
+        if(kenophobiaManager._isInBathroom){
+            return true;
+        }
+        return false;
     }
 
 }

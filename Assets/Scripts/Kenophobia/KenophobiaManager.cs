@@ -8,6 +8,7 @@ public class KenophobiaManager : MonoBehaviour
     public bool _isElectricMeterOn;
 
     public int IdScenarioPlayed;
+    public bool _isInBathroom = false;
 
     // Start is called before the first frame update
     void Start()
