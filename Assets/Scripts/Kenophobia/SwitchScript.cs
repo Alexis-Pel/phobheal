@@ -10,8 +10,7 @@ public class SwitchScript : MonoBehaviour
     [SerializeField]
     private GameObject Switch;
 
-    [SerializeField]
-    private bool _isOn;
+    public bool _isOn;
 
     [SerializeField]
     private KenophobiaManager gameManager;
@@ -19,6 +18,7 @@ public class SwitchScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Debug.Log(gameManager._isElectricMeterOn);
         if (gameManager != null && gameManager._isElectricMeterOn)
         {
             _isOn = true;
@@ -31,7 +31,7 @@ public class SwitchScript : MonoBehaviour
     }
 
     public void SwitchOnOff(){
-        Debug.Log(_isOn+"   "+gameManager._isElectricMeterOn);
+        //Debug.Log(_isOn+"   "+gameManager._isElectricMeterOn);
         Vector3 rotation = _isOn ? new Vector3(-10f, 0, 0) : new Vector3(10f, 0, 0);
         if (!Mathf.Approximately(Switch.transform.localEulerAngles.x, rotation.x)){
             Switch.transform.localEulerAngles = rotation;
