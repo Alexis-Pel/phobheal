@@ -1307,8 +1307,8 @@ MonoBehaviour:
       m_Calls: []
   m_Handle: {fileID: 5518774793803802475}
   m_Value: 0.5
-  m_MaxPosition: 0.02
-  m_MinPosition: -0.02
+  m_MaxPosition: 0.034
+  m_MinPosition: -0.034
   m_OnValueChange:
     m_PersistentCalls:
       m_Calls:
@@ -2089,7 +2089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4412026616150589460}
+  - {fileID: 4629740810416510864}
   - {fileID: 2738777512653520594}
   - {fileID: 6648579572285475107}
   - {fileID: 7521015803364758467}
@@ -2757,7 +2757,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3939432696900771157, guid: a5219cd5a2cfea140a0238f2e0745b92, type: 3}
   m_PrefabInstance: {fileID: 2153679218269395363}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4228901669448247295
+--- !u!1001 &5173120577090367611
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2767,15 +2767,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.05
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.025
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2783,7 +2783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2826,10 +2826,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30331288bde28024c833888ecae8c173, type: 3}
---- !u!4 &4412026616150589460 stripped
+--- !u!4 &4629740810416510864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 30331288bde28024c833888ecae8c173, type: 3}
-  m_PrefabInstance: {fileID: 4228901669448247295}
+  m_PrefabInstance: {fileID: 5173120577090367611}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5222253030999186463
 PrefabInstance:
@@ -2903,15 +2903,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.035
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.005
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.006
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2955,7 +2955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
       propertyPath: m_Name
-      value: BoxLever.fbx_Lever
+      value: BoxLever
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2989,8 +2989,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0000017, y: 2.0000045, z: 12.724298}
-  m_Center: {x: -0.00000047683716, y: 0.0000015341222, z: -5.362148}
+  m_Size: {x: 0.02, y: 0.02, z: 0.127}
+  m_Center: {x: 0, y: 0, z: -0.0536}
 --- !u!4 &5518774793803802475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30210bcf65be214e9e12d8ddc78f490, type: 3}
