@@ -31,7 +31,8 @@ public class GoalElevator : MonoBehaviour
         //Depends if the goal is to go up or go down
         float encloseHeight = Mathf.Max(_isDiving ? HeightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : HeightGoal));
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
-        heightText.text = transform.position.y.ToString("00");
+
+        heightText.text = ((transform.position.y - heightStart) / transform.localScale.y).ToString("00");
 
         if (transform.position.y == HeightGoal)
         {
