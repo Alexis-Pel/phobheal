@@ -1,3 +1,5 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +12,8 @@ public class GoalElevator : MonoBehaviour
     public float HeightGoal;
 
     [SerializeField] private UnityEvent goalEvent;
+
+    [SerializeField] private TMP_Text heightText;
 
     private float modifier;
     private bool _isDiving;
@@ -28,6 +32,7 @@ public class GoalElevator : MonoBehaviour
         //Depends if the goal is to go up or go down
         float encloseHeight = Mathf.Max(_isDiving ? HeightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : HeightGoal));
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
+        heightText.text = transform.position.y.ToString("00");
 
         if (transform.position.y == HeightGoal)
         {
