@@ -848,7 +848,7 @@ PrefabInstance:
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 323763492}
     - target: {fileID: 5282561635027214697, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.878001
@@ -31247,7 +31247,7 @@ MonoBehaviour:
   - {fileID: 909733980}
   - {fileID: 909733979}
   - {fileID: 909733962}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 323763492}
   Lights:
   - {fileID: 217922731}
   - {fileID: 105931177}

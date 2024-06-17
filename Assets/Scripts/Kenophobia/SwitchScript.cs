@@ -31,7 +31,7 @@ public class SwitchScript : MonoBehaviour
     }
 
     public void SwitchOnOff(){
-        Debug.Log(_isOn+"   "+gameManager._isElectricMeterOn);
+        //Debug.Log(_isOn+"   "+gameManager._isElectricMeterOn);
         Vector3 rotation = _isOn ? new Vector3(-10f, 0, 0) : new Vector3(10f, 0, 0);
         if (!Mathf.Approximately(Switch.transform.localEulerAngles.x, rotation.x)){
             Switch.transform.localEulerAngles = rotation;
