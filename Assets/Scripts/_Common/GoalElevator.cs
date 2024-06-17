@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class GoalElevator : MonoBehaviour
 {
-    [SerializeField] private float offsetHeight;
+    [SerializeField] private float maxSpeed;
 
     // Will be remove once the change of difficulties is finished
     [SerializeField] private float heightStart;
@@ -42,6 +42,6 @@ public class GoalElevator : MonoBehaviour
 
     private float GetOffset()
     {
-        return offsetHeight * (modifier - 0.5f) * 2f;
+        return maxSpeed * (modifier - 0.5f) * 2f;
     }
 }
