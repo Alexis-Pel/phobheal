@@ -6,8 +6,8 @@ using System;
 
 public class TriggerInputDetector : MonoBehaviour
 {
-    public TextMeshProUGUI leftScoreDisplay;
-    public TextMeshProUGUI rightScoreDisplay;
+    //public TextMeshProUGUI leftScoreDisplay;
+    //public TextMeshProUGUI rightScoreDisplay;
 
     private InputData _inputData;
     private float _leftMaxScore = 0f;
@@ -42,7 +42,7 @@ public class TriggerInputDetector : MonoBehaviour
         {
             // Use the highest trigger value of the two controllers
             triggerValue = Mathf.Max(rightTriggerValue, leftTriggerValue);
-            leftScoreDisplay.text = triggerValue.ToString("#.00");
+            //leftScoreDisplay.text = triggerValue.ToString("#.00");
             Debug.Log("triggerValue: " + triggerValue);
                         
             if (triggerValue > 0.5)
@@ -55,7 +55,7 @@ public class TriggerInputDetector : MonoBehaviour
         {
             // Use the boolean value of one of the A buttons (if they are pressed)
             bool Abutton = rightAbutton || leftAbutton;
-            rightScoreDisplay.text = Abutton.ToString();
+            //rightScoreDisplay.text = Abutton.ToString();
             Debug.Log("A button: " + Abutton);
 
             if (Abutton)
@@ -68,7 +68,7 @@ public class TriggerInputDetector : MonoBehaviour
         {
             // Use the boolean value of one of the B buttons (if they are pressed)
             bool Bbutton = rightBbutton || leftBbutton;
-            rightScoreDisplay.text = Bbutton.ToString();
+            //rightScoreDisplay.text = Bbutton.ToString();
             Debug.Log("B button: " + Bbutton);
             
             if (Bbutton)
