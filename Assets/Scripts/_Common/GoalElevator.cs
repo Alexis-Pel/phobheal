@@ -1,15 +1,18 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class GoalElevator : MonoBehaviour
 {
-    [SerializeField] private float offsetHeight;
+    [SerializeField] private float maxSpeed;
 
     // Will be remove once the change of difficulties is finished
     [SerializeField] private float heightStart;
     public float HeightGoal;
 
     [SerializeField] private UnityEvent goalEvent;
+
+    [SerializeField] private TMP_Text heightText;
 
     private float modifier;
     private bool _isDiving;
@@ -29,6 +32,8 @@ public class GoalElevator : MonoBehaviour
         float encloseHeight = Mathf.Max(_isDiving ? HeightGoal : heightStart, Mathf.Min(newHeight, _isDiving ? heightStart : HeightGoal));
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
 
+        heightText.text = ((transform.position.y - heightStart) / transform.localScale.y).ToString("00");
+
         if (transform.position.y == HeightGoal)
         {
             goalEvent.Invoke();
@@ -37,6 +42,6 @@ public class GoalElevator : MonoBehaviour
 
     private float GetOffset()
     {
-        return offsetHeight * (modifier - 0.5f) * 2f;
+        return maxSpeed * (modifier - 0.5f) * 2f;
     }
 }
