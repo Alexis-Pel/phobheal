@@ -505,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2332,7 +2332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Param\xE8trage"
+  m_text: "Difficult\xE9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2965,7 +2965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fe4f25294de34bba8f8739a559a2f, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  Label: "D\xE9but du Brouillard (m)"
+  Label: "Visibilit\xE9 dans l'eau (m)"
   InitValue: 15
   FinalValue: 15
