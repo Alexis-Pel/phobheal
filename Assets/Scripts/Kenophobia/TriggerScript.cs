@@ -6,21 +6,8 @@ public class TriggerScript : MonoBehaviour
 {
     public KenophobiaManager kenophobiaManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other) {
-        Debug.Log(other.tag);
-        if(other.tag == "Player") {
+        if(other.CompareTag("Player")) {
             kenophobiaManager._isInBathroom = true;
         }
     }

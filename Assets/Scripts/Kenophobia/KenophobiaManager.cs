@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System;
 
 public class KenophobiaManager : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class KenophobiaManager : MonoBehaviour
 
     public int IdScenarioPlayed;
     public bool _isInBathroom = false;
+    private List<string> logMessages = new List<string>();
+    public TMP_Text textMeshPro;
 
     // Start is called before the first frame update
     void Start()
@@ -50,12 +54,18 @@ public class KenophobiaManager : MonoBehaviour
             {
                 foreach (var obj in objects.Steps[step + 1].objects)
                 {
+                    //Debug.Log(obj.name);
                     obj.SetActive(true);
                 }
                 
             }
+            //Debug.Log(step);
             return step++;
         }
         return step;
+    }
+
+    public void DebugConsole(String test){
+        textMeshPro.text=$"{test}";
     }
 }

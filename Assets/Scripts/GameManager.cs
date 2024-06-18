@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void StepDone()
     {
-        print(stepCompleted);
+        //print(stepCompleted);
         stepCompleted++;
 
         if (stepCompleted == totalSteps)
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
         // S'abonner à l'événement ButtonPressed
         if (triggerInputDetector != null)
         {
-            Debug.Log("OnEnable");
+            //Debug.Log("OnEnable");
             triggerInputDetector.ButtonPressed += TogglePause;
         }
     }
@@ -96,14 +96,14 @@ public class GameManager : MonoBehaviour
         // Se désabonner de l'événement ButtonPressed
         if (triggerInputDetector != null)
         {
-            Debug.Log("OnDisable");
+            //Debug.Log("OnDisable");
             triggerInputDetector.ButtonPressed -= TogglePause;
         }
     }
 
         private void TogglePause()
     {
-        Debug.Log("TogglePause !!!");
+        //Debug.Log("TogglePause !!!");
         gamePaused = !gamePaused;
         Time.timeScale = gamePaused ? 0 : 1;
         pauseScreen.SetActive(gamePaused); 
