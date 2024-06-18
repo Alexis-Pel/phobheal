@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void StepDone()
     {
-        print(stepCompleted);
         stepCompleted++;
 
         if (stepCompleted == totalSteps)
