@@ -535,6 +535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Profondeur
       objectReference: {fileID: 0}
+    - target: {fileID: 8617310169156404760, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: m_text
+      value: -50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2057,7 +2061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329294929617540720, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_text
-      value: Temps d'apparition Poissons (s)
+      value: "Densit\xE9 Poisson"
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Pivot.x
@@ -2170,6 +2174,16 @@ PrefabInstance:
     - target: {fileID: 5953027600287780713, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Name
       value: Faune
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617310169156404760, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: m_text
+      value: '1
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617310169156404760, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: m_fontSize
+      value: 17.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2897,7 +2911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329294929617540720, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_text
-      value: "D\xE9but du Brouillard (m)"
+      value: "Visibilit\xE9 dans l'eau (m)"
       objectReference: {fileID: 0}
     - target: {fileID: 1462546131625054363, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Pivot.x
@@ -3010,6 +3024,10 @@ PrefabInstance:
     - target: {fileID: 5953027600287780713, guid: 855742c7117da5b43b3257881edacef9, type: 3}
       propertyPath: m_Name
       value: Brouillard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617310169156404760, guid: 855742c7117da5b43b3257881edacef9, type: 3}
+      propertyPath: m_text
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6364431997872833507, guid: 855742c7117da5b43b3257881edacef9, type: 3}
