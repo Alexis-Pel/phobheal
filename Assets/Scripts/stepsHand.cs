@@ -9,6 +9,7 @@ public class StepsHand : MonoBehaviour
     private int stepCompleted = 0;
     private List<string> stars = new();
 
+    public TMP_Text handStarText;
     public TMP_Text handText;
 
     // Start is called before the first frame update
@@ -35,6 +36,17 @@ public class StepsHand : MonoBehaviour
 
     private void SetText()
     {
-        handText.text = string.Join(" ", stars);
+        handStarText.text = string.Join(" ", stars);
+        if(GameManager.Instance.stepsObjective.Length > 0)
+        {
+            try
+            {
+                handText.text = GameManager.Instance.stepsObjective[stepCompleted];
+            }
+            catch
+            {
+                handText.text = GameManager.Instance.stepsObjective[^1];
+            }
+        }
     }
 }
