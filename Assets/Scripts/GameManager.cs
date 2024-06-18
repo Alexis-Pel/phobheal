@@ -5,13 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public GameObject canva;
     public int totalSteps;
+    public GameObject pauseScreen;
+    public TriggerInputDetector triggerInputDetector;
+    public string[] stepsObjective;
 
     private ScenesEnum currentScenarioIndex;
-    private int stepCompleted = 0;
-
-    [SerializeField] private GameObject pauseScreen;
     private bool gamePaused = false;
-    public TriggerInputDetector triggerInputDetector;
+    private int stepCompleted = 0;
 
     public static GameManager Instance; // A static reference to the GameManager instance
 
@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void StepDone()
     {
-        print(stepCompleted);
         stepCompleted++;
 
         if (stepCompleted == totalSteps)
@@ -69,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     private void ReturnToMenu()
     {
+        Destroy(gameObject);
         CancelInvoke();
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
