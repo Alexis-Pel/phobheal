@@ -19,6 +19,7 @@ public class TriggerScript : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log(other.tag);
         if(other.tag == "Player") {
             kenophobiaManager._isInBathroom = true;
         }
