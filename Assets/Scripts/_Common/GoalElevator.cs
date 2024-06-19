@@ -23,8 +23,6 @@ public class GoalElevator : MonoBehaviour
     private float modifier;
     private bool _isDiving;
 
-    private bool hasPlayedNotAllowedSound;
-
     public void SetModifier(float modifier)
     {
         //todo: Need Feedback to User
@@ -48,7 +46,6 @@ public class GoalElevator : MonoBehaviour
         {
             return;
         }
-        hasPlayedNotAllowedSound = false;
 
         float newHeight = transform.position.y + GetOffset();
 
