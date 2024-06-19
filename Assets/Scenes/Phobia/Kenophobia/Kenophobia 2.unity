@@ -5768,7 +5768,6 @@ MonoBehaviour:
   _isElectricMeterOn: 1
   IdScenarioPlayed: 1
   _isInBathroom: 0
-  textMeshPro: {fileID: 1550970902}
 --- !u!4 &323763493
 Transform:
   m_ObjectHideFlags: 0
@@ -5818,6 +5817,7 @@ MonoBehaviour:
   - {fileID: 1982646738}
   - {fileID: 2066703730}
   kenophobiaManager: {fileID: 323763492}
+  textMeshPro: {fileID: 1550970902}
 --- !u!1 &324775593
 GameObject:
   m_ObjectHideFlags: 0
@@ -24967,6 +24967,10 @@ PrefabInstance:
       propertyPath: m_EnableFly
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 714455885667587189, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 794585898237258040, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -25141,7 +25145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5984872781332585375, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_TurnAmount
-      value: 1
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6298170530180427787, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_StartingGroupMembers.Array.data[2]

@@ -21,7 +21,7 @@ public class ScenarioLightTurnScript : MonoBehaviour
         ElectricMeter._isOn = true;
         SpotLight.SetActive(false);
         Switch._isOn = false;
-        textMeshPro.text = "Éteigner toutes les lumières ...";
+        textMeshPro.text = "Éteigner toutes les lumières ...\n4/4";
 
         foreach (var Object in Objects.Steps[step].objects)
         {
@@ -67,7 +67,7 @@ public class ScenarioLightTurnScript : MonoBehaviour
         }
         _isOn = nb_isOn == 0 ? true : false;
 
-        textMeshPro.text = _isOn ? "Aller vous Couchez ?" : "Éteigner toutes les lumières ...";
+        textMeshPro.text = _isOn ? "Aller vous Couchez ?" : $"Éteigner toutes les lumières ...\n{nb_isOn}/4";
         return _isOn;
     }
 
