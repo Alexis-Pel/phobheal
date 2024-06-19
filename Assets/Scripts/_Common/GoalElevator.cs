@@ -25,7 +25,12 @@ public class GoalElevator : MonoBehaviour
 
     private bool hasPlayedNotAllowedSound;
 
-    public void SetModifier(float modifier) => this.modifier = modifier;
+    public void SetModifier(float modifier)
+    {
+        //todo: Need Feedback to User
+        if (!isAllowedToMoved && !notAllowedSound.isPlaying) notAllowedSound.Play();
+        this.modifier = modifier;
+    }
 
     public void AllowedMoving(bool isAllowed)
     {
@@ -39,14 +44,8 @@ public class GoalElevator : MonoBehaviour
 
     void FixedUpdate()
     {
-        //todo: Need Feedback to User
         if (!isAllowedToMoved)
         {
-            if (!hasPlayedNotAllowedSound)
-            {
-                hasPlayedNotAllowedSound = true;
-                //todo: play not allowed sound
-            }
             return;
         }
         hasPlayedNotAllowedSound = false;
@@ -58,7 +57,7 @@ public class GoalElevator : MonoBehaviour
 
         if ((encloseHeight == heightStart || encloseHeight == HeightGoal) && transform.position.y != encloseHeight)
         {
-            //todo: play sound that define we are at the maximum or minimum we can go
+            hitMaximumRange.Play();
         }
 
         transform.position = new Vector3(transform.position.x, encloseHeight, transform.position.z);
