@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScenarioLightTurnScript : MonoBehaviour
 {
@@ -14,11 +15,13 @@ public class ScenarioLightTurnScript : MonoBehaviour
     public int nbLigth = 0;
     public List<SwitchScript> Switchs;
     public KenophobiaManager kenophobiaManager;
+    public TMP_Text textMeshPro;
 
     void Start(){
         ElectricMeter._isOn = true;
         SpotLight.SetActive(false);
         Switch._isOn = false;
+        textMeshPro.text = "Éteigner toutes les lumières ...";
 
         foreach (var Object in Objects.Steps[step].objects)
         {
@@ -55,17 +58,22 @@ public class ScenarioLightTurnScript : MonoBehaviour
 
     bool TriggersLights(){
         int nb_isOn = 0;
+        bool _isOn = false;
         foreach (var switchObject in Switchs)
         {
             if(switchObject._isOn) {
                 nb_isOn++;
             }
         }
-        return nb_isOn == 0 ? true : false;
+        _isOn = nb_isOn == 0 ? true : false;
+
+        textMeshPro.text = _isOn ? "Aller vous Couchez ?" : "Éteigner toutes les lumières ...";
+        return _isOn;
     }
 
     bool TriggersBedrooms(){
         if(kenophobiaManager._isInBathroom){
+            textMeshPro.text = "Le scénario n°1 est finis ";
             return true;
         }
         return false;

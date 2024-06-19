@@ -12,7 +12,6 @@ public class KenophobiaManager : MonoBehaviour
     public int IdScenarioPlayed;
     public bool _isInBathroom = false;
     private List<string> logMessages = new List<string>();
-    public TMP_Text textMeshPro;
 
     // Start is called before the first frame update
     void Start()
@@ -59,13 +58,10 @@ public class KenophobiaManager : MonoBehaviour
                 }
                 
             }
+            //step++;
             //Debug.Log(step);
             return step++;
         }
         return step;
-    }
-
-    public void DebugConsole(String test){
-        textMeshPro.text=$"{test}";
     }
 }
