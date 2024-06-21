@@ -22,7 +22,7 @@ public class TriggerInputDetector : MonoBehaviour
     private void Start()
     {
         _inputData = GetComponent<InputData>();
-        Debug.Log("Started inputData: " + _inputData);
+        //Debug.Log("Started inputData: " + _inputData);
     }
 
     // Update is called once per frame
@@ -43,7 +43,7 @@ public class TriggerInputDetector : MonoBehaviour
             // Use the highest trigger value of the two controllers
             triggerValue = Mathf.Max(rightTriggerValue, leftTriggerValue);
             //leftScoreDisplay.text = triggerValue.ToString("#.00");
-            Debug.Log("triggerValue: " + triggerValue);
+            //Debug.Log("triggerValue: " + triggerValue);
                         
             if (triggerValue > 0.5)
             {
@@ -56,7 +56,7 @@ public class TriggerInputDetector : MonoBehaviour
             // Use the boolean value of one of the A buttons (if they are pressed)
             bool Abutton = rightAbutton || leftAbutton;
             //rightScoreDisplay.text = Abutton.ToString();
-            Debug.Log("A button: " + Abutton);
+            //Debug.Log("A button: " + Abutton);
 
             if (Abutton)
             {
@@ -69,7 +69,7 @@ public class TriggerInputDetector : MonoBehaviour
             // Use the boolean value of one of the B buttons (if they are pressed)
             bool Bbutton = rightBbutton || leftBbutton;
             //rightScoreDisplay.text = Bbutton.ToString();
-            Debug.Log("B button: " + Bbutton);
+            //Debug.Log("B button: " + Bbutton);
             
             if (Bbutton)
             {
@@ -80,7 +80,7 @@ public class TriggerInputDetector : MonoBehaviour
         // Déclencher l'événement uniquement si un bouton est appuyé et n'était pas appuyé précédemment
         if (isButtonPressed && !buttonPreviouslyPressed)
         {
-            Debug.Log("TriggerInputDetector: Invoking ButtonPressed event");
+            //Debug.Log("TriggerInputDetector: Invoking ButtonPressed event");
             ButtonPressed?.Invoke();
         }
 
