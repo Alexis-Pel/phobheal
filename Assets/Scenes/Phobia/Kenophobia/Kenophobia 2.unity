@@ -5746,6 +5746,7 @@ GameObject:
   - component: {fileID: 323763493}
   - component: {fileID: 323763492}
   - component: {fileID: 323763494}
+  - component: {fileID: 323763495}
   m_Layer: 0
   m_Name: KenophobiaManager
   m_TagString: Untagged
@@ -5766,7 +5767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isElectricMeterOn: 1
-  IdScenarioPlayed: 1
+  IdScenarioPlayed: 3
   _isInBathroom: 0
 --- !u!4 &323763493
 Transform:
@@ -5818,6 +5819,25 @@ MonoBehaviour:
   - {fileID: 2066703730}
   kenophobiaManager: {fileID: 323763492}
   textMeshPro: {fileID: 1550970902}
+--- !u!114 &323763495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323763490}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371941b8e2f34414d921ba88aa0898af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "IDSc\xE9nario": 3
+  step: 0
+  test: 0
+  Objects:
+    Steps:
+    - objects: []
+  electricMeterScript: {fileID: 1525858943}
 --- !u!1 &324775593
 GameObject:
   m_ObjectHideFlags: 0

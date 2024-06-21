@@ -50,11 +50,14 @@ public class ElectricMeterScript : MonoBehaviour
             Light.SetActive(_isOn);
             Light light = Light.GetComponent<Light>();
             light.enabled = _isOn;
-            /*if(!_isStarted && _isOn){
-                Light light = Light.GetComponent<Light>();
-                light.enabled = _isOn;
-                _isStarted = true;
-            }*/
+        }
+    }
+
+    public void ActualiseElectricMeter(bool _isOnLoc){
+        _isOn = _isOnLoc;
+        SwitchElectricity();
+        foreach (GameObject Light in Lights){
+            Light.SetActive(_isOnLoc);
         }
     }
 }
