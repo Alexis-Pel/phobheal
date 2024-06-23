@@ -21,6 +21,8 @@ public class DifficultyManager : MonoBehaviour
         cage.AllowedMoving(false);
     }
 
+
+    [ContextMenu("Validate Difficulty")]
     public void ValidDifficulty()
     {
         #region playerObjective

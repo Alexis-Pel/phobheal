@@ -13,6 +13,9 @@ public class UnderwaterEffect : MonoBehaviour
 
     [SerializeField] private float maxDepthSunlight;
 
+    [SerializeField] private AudioSource waterSurface;
+    [SerializeField] private AudioSource underWater;
+
     public float WaterNivelY { get; private set; }
 
     private void Start()
@@ -26,6 +29,8 @@ public class UnderwaterEffect : MonoBehaviour
     {
         bool _isUnderWater = IsUnderWater();
         RenderSettings.fog = _isUnderWater;
+        waterSurface.mute = _isUnderWater;
+        underWater.mute = !_isUnderWater;
         // Rotate the water plane. It's not seen on the other side, and to preserve performance, we define only 1 water surface
         transform.rotation = Quaternion.AngleAxis(_isUnderWater ? 180 : 0, Vector3.back);
 
