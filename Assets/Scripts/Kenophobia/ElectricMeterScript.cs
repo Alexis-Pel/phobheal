@@ -27,7 +27,7 @@ public class ElectricMeterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ActualiseGameManagerIsOn();
+         
     }
 
     private void SwitchElectricity()

@@ -37,6 +37,7 @@ public class KenophobiaManager : MonoBehaviour
 
     public static int SwitchStep(int step,StepGameObjectsList objects, System.Func<bool> actualise)
     {
+        //Debug.Log(actualise());
         if (actualise())
         {
             //Debug.Log(" " + (step < 0 || step >= objects.Steps.Count) + " " + step + " " + objects.Steps.Count);
@@ -61,9 +62,9 @@ public class KenophobiaManager : MonoBehaviour
                 }
                 
             }
-            //step++;
-            //Debug.Log(step);
-            return step++;
+            step++;
+            Debug.Log(step);
+            return step;
         }
         return step;
     }
