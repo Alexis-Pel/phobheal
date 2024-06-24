@@ -2381,6 +2381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &69715933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3004,6 +3005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &89457926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7455,6 +7457,7 @@ GameObject:
   - component: {fileID: 323763492}
   - component: {fileID: 323763494}
   - component: {fileID: 323763495}
+  - component: {fileID: 323763496}
   m_Layer: 0
   m_Name: KenophobiaManager
   m_TagString: Untagged
@@ -7524,6 +7527,7 @@ MonoBehaviour:
   - {fileID: 1982646738}
   - {fileID: 2066703730}
   kenophobiaManager: {fileID: 0}
+  textMeshPro: {fileID: 0}
 --- !u!114 &323763495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7531,7 +7535,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323763490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 816a6f93f2d327f4186ad5e2af4b6f0b, type: 3}
   m_Name: 
@@ -7557,6 +7561,29 @@ MonoBehaviour:
       n'oubliez pas d'aller les \xE9teindre !"
     objects: []
   instructionsText: {fileID: 1123377814}
+--- !u!114 &323763496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323763490}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371941b8e2f34414d921ba88aa0898af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "IDSc\xE9nario": 3
+  step: 0
+  test: 0
+  Objects:
+    Steps:
+    - objects: []
+    - objects:
+      - {fileID: 566864750}
+  electricMeterScript: {fileID: 1525858943}
+  trigger: {fileID: 0}
+  kenophobiaManager: {fileID: 0}
 --- !u!1 &324775593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10622,6 +10649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &419975809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10891,6 +10919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &422595628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14307,6 +14336,153 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1017606091530846216, guid: c5be39b879c83f54d9bbfebe68c809be, type: 3}
   m_PrefabInstance: {fileID: 564985543}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &566864750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566864756}
+  - component: {fileID: 566864755}
+  - component: {fileID: 566864754}
+  - component: {fileID: 566864753}
+  - component: {fileID: 566864752}
+  - component: {fileID: 566864751}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &566864751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641af82addc134cc799fee41ad1091bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kenophobiaManager: {fileID: 0}
+--- !u!54 &566864752
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &566864753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &566864754
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 0
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &566864755
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &566864756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566864750}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.246, y: 1.85, z: 3.966}
+  m_LocalScale: {x: 2, y: 4, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568937386
 GameObject:
   m_ObjectHideFlags: 0
@@ -15019,6 +15195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &590047263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17178,6 +17355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &666124889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17764,6 +17942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &695703409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20800,6 +20979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &821629197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23433,6 +23613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &909733995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23583,6 +23764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &909733998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24233,6 +24415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &935755064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24674,6 +24857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &945891886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30846,6 +31030,10 @@ PrefabInstance:
     - target: {fileID: 849293593997141699, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_ClearFlags
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 849293593997141699, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 849293593997141699, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -37375,7 +37563,6 @@ MonoBehaviour:
   totalSteps: 0
   pauseScreen: {fileID: 905514201}
   triggerInputDetector: {fileID: 147165757}
-  stepsObjective: []
 --- !u!4 &1483598292
 Transform:
   m_ObjectHideFlags: 0
@@ -40631,6 +40818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &1610211277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51441,6 +51629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &2037907232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52684,6 +52873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &2094318688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53163,6 +53353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchElementMeter: {fileID: 0}
   _isOn: 0
+  _isSwitchController: 0
 --- !u!114 &2111572676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54125,5 +54316,6 @@ SceneRoots:
   - {fileID: 1544021087}
   - {fileID: 1221023087}
   - {fileID: 921590769}
+  - {fileID: 566864756}
   - {fileID: 1578084965}
   - {fileID: 1332524081}

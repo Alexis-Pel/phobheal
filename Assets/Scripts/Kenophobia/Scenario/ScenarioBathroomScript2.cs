@@ -33,6 +33,7 @@ public class ScenarioBathroomScript2 : MonoBehaviour
         playerTransform = Camera.main.transform;
         ActivateStep(step);
         UpdateInstructions(step);
+
     }
 
     void Update()
@@ -145,4 +146,5 @@ public class ScenarioBathroomScript2 : MonoBehaviour
             }
         }
     }
+
 }
