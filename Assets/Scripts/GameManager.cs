@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     public TriggerInputDetector triggerInputDetector;
     public string[] stepsObjective;
+    public bool stepEndGame;
 
     private ScenesEnum currentScenarioIndex;
     private bool gamePaused = false;
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         stepCompleted++;
 
-        if (stepCompleted == totalSteps)
+        if ((stepCompleted == totalSteps) && stepEndGame)
         {
             WinGame();
         }
