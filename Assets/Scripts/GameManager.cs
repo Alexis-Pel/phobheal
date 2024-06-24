@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         // TODO: Show win screen
         Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        Invoke(nameof(StopGame), 5f);
+        //Invoke(nameof(StopGame), 5f);
     }
 
 
