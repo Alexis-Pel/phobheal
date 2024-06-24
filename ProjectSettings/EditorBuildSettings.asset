@@ -5,24 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/instructions.unity
-    guid: 01169d766a27d4051808d492ada1f98b
+    guid: 14260524f318041939b145acb7d3318f
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3d6db0f7419879c468974344fbb9d1d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Phobia/Acrophobia/AcrophobiaV2.unity
     guid: b939a77df0739744a92429964a1137a0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Phobia/Thalassophobia.unity
     guid: 44b73976e393dc84d92d6b32111cca8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Phobia/Kenophobia/Kenophobia.unity
     guid: 66cd5d666a145b1449e48d150fc9737e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Phobia/Agoraphobia/Agoraphobia.unity
     guid: 6c2f4bf56c63b47acb1f716f51f97014
+  - enabled: 1
+    path: Assets/Scenes/Phobia/Kenophobia/Kenophobia 2.unity
+    guid: 413ca06266abd4ed1b9d67ce006c40ca
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 383c55ac9a4974587a27bf39da9a842e, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 30913eb10dd4e4100b09677d0dbb9a3d, type: 2}

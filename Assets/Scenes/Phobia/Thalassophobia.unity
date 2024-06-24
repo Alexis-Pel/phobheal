@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.16862746, g: 0.29803923, b: 0.34117648, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 223313990}
-  m_IndirectSpecularColor: {r: 0.2820024, g: 0.4918435, b: 0.48675916, a: 1}
+  m_IndirectSpecularColor: {r: 0.28203368, g: 0.49200624, b: 0.48703134, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1708,7 +1708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 849293593997141699, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_RenderingPath
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 849293593997141699, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_BackGroundColor.a
@@ -2854,6 +2854,9 @@ MonoBehaviour:
   fog: {fileID: 11400000, guid: 44b743149423846449a65e851ed68c24, type: 2}
   depth: {fileID: 11400000, guid: 4419e113b78df2a4c85b9d42047ef470, type: 2}
   faunaDensity: {fileID: 11400000, guid: 8a1cf52d2a3db7f4fa753716874070e5, type: 2}
+  height: {fileID: 0}
+  opacity: {fileID: 0}
+  cageMaterial: {fileID: 0}
 --- !u!1001 &2409124857913833129
 PrefabInstance:
   m_ObjectHideFlags: 0
