@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.Port;
 
 public class DifficultyManager : MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class DifficultyManager : MonoBehaviour
     private void Start()
     {
         if (debug) ValidDifficulty();
-        cageMaterial.SetColor("_Color", new Color32(183, 183, 183, 255));
+        cageMaterial.SetColor("_Color", new Color32(143, 177, 207, 255));
     }
 
     public void ValidDifficulty()
@@ -61,7 +60,7 @@ public class DifficultyManager : MonoBehaviour
         #region cageOpacity
         if (opacity != null)
         {
-            cageMaterial.SetColor("_Color", new Color32(183, 183, 183, (byte)opacity.FinalValue));
+            cageMaterial.SetColor("_Color", new Color32(143, 177, 207, (byte)opacity.FinalValue));
         }
         #endregion
 
