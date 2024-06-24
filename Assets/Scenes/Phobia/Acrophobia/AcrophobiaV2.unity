@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.8313726, g: 0.9215687, b: 0.9294118, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.0003
+  m_FogDensity: 0.0004
   m_LinearFogStart: 0
   m_LinearFogEnd: 2000
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cage
       objectReference: {fileID: 0}
+    - target: {fileID: 2285365354209675939, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -715,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: far clip plane
-      value: 3000
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_BackGroundColor.b
