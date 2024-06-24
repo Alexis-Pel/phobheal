@@ -103,9 +103,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-        private void TogglePause()
+    private void TogglePause()
     {
-        //Debug.Log("TogglePause !!!");
         gamePaused = !gamePaused;
         Time.timeScale = gamePaused ? 0 : 1;
         pauseScreen.SetActive(gamePaused); 
