@@ -21,7 +21,7 @@ public class DifficultySettingsElement : MonoBehaviour
     {
         slider.onValueChanged.AddListener(delegate { difficulty.SetValue(slider.value); });
         label.text = difficulty.Label;
-        if(difficulty.Label != "Opacit? de la cage")
+        if(difficulty.Label != "Opacité de la cage")
         {
             difficulty.FinalValue = difficulty.InitValue;
         }
