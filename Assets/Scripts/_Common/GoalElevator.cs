@@ -7,7 +7,8 @@ public class GoalElevator : MonoBehaviour
     [SerializeField] private bool isAllowedToMoved = true;
     [SerializeField] private float maxSpeed;
 
-    [SerializeField] private float heightStart;
+    // Will be remove once the change of difficulties is finished
+    public float heightStart;
     public float HeightGoal;
 
     [SerializeField] private UnityEvent goalEvent;

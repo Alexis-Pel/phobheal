@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject canva;
     public int totalSteps;
+    public string[] stepsObjective;
+    public bool stepEndGame;
 
     private ScenesEnum currentScenarioIndex;
     private int stepCompleted = 0;
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour
         //print(stepCompleted);
         stepCompleted++;
 
-        if (stepCompleted == totalSteps)
+        if ((stepCompleted == totalSteps) && stepEndGame)
         {
             WinGame();
         }
