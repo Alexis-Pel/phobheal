@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScenarioTurnElectricMeterScript : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
     public ElectricMeterScript electricMeterScript;
     public GameObject trigger;
     public KenophobiaManager kenophobiaManager;
+    public TMP_Text textMeshPro;
+    public Transform player;
 
     void Start(){
         // Update Objects and variables at the beginning of the scenario
+        textMeshPro.text = "Aller au compteur \npour réactivé le courant...";
         UpdateStartScenario();
     }
 
@@ -26,9 +30,11 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
                         case 15542: // Example
                             return true;
                         case 0:
-                            return TriggerElectricMeter();
+                            return TriggerCompterPosition();
                         case 1:
-                        return TriggerBedroom();
+                            return TriggerElectricMeter();
+                        case 2:
+                            return TriggerBedroom();
                         default:
                             return ExampleStepOne();
                     }
@@ -43,16 +49,37 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         }
         return false;
     }
+    bool TriggerCompterPosition(){
+        float distance = Vector3.Distance(player.position, new Vector3(8f,1f,5f));
+        //Debug.Log(distance);
+        if(distance < 2) {
+            //Debug.Log("Enter");
+            textMeshPro.text = "Réactivez le courant...";
+            return true;
+        }
+        return false;
+    }
 
     bool TriggerElectricMeter(){
         if (electricMeterScript._isOn){
+            textMeshPro.text = "Le courant est réactivé,\n vous pouvez retourner dans votre chambre...";
             return true;
         }
         return false;
     }
 
     bool TriggerBedroom(){
-        if(kenophobiaManager._isInBathroom){
+        /*if(kenophobiaManager._isInBathroom){
+            textMeshPro.text = "Bien joué(e) le scénario est finis!";
+            return true;
+        }
+        return false;*/
+
+        float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
+        Debug.Log(distance);
+        if(distance < 2) {
+            //Debug.Log("Enter");
+            textMeshPro.text = "Bien joué(e) le scénario est finis!";
             return true;
         }
         return false;
@@ -60,7 +87,6 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
 
     void UpdateStartScenario(){
         electricMeterScript.ActualiseElectricMeter(false);
-
     }
 
 }
