@@ -8,16 +8,19 @@ public class InteractorSwitchElectricMeterScript : MonoBehaviour
     private GameObject SwitchElementMeter;
 
     public bool _isOn;
+    public bool _isSwitchController = false;
 
     void Start() {
         SwitchElementMeter = transform.gameObject;
     }
     public void InteractorSwitchElectricMeterFun(){
-        Vector3 rotation = _isOn ? new Vector3(0f, 90, 0) : new Vector3(135f, 90, 0);
-        if (!Mathf.Approximately(SwitchElementMeter.transform.localEulerAngles.x, rotation.x))
-        {
-            SwitchElementMeter.transform.localEulerAngles = rotation;
-            _isOn = !_isOn;
+        if(!_isOn || _isSwitchController){
+            Vector3 rotation = _isOn ? new Vector3(0f, 90, 0) : new Vector3(135f, 90, 0);
+            if (!Mathf.Approximately(SwitchElementMeter.transform.localEulerAngles.x, rotation.x))
+            {
+                SwitchElementMeter.transform.localEulerAngles = rotation;
+                _isOn = !_isOn;
+            }
         }
     }
 }

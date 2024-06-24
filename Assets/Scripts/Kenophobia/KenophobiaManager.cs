@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System;
 
 public class KenophobiaManager : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class KenophobiaManager : MonoBehaviour
 
     public int IdScenarioPlayed;
     public bool _isInBathroom = false;
+    private List<string> logMessages = new List<string>();
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +21,8 @@ public class KenophobiaManager : MonoBehaviour
             case 1:
                 gameObject.GetComponent<ScenarioLightTurnScript>().enabled = true;
                 break;
-            case 2:
-                gameObject.GetComponent<ScenarioBathroomScript2>().enabled = true;
+            case 3:
+                gameObject.GetComponent<ScenarioTurnElectricMeterScript>().enabled = true;
                 break;
             default:
             break;
@@ -53,10 +56,13 @@ public class KenophobiaManager : MonoBehaviour
             {
                 foreach (var obj in objects.Steps[step + 1].objects)
                 {
+                    //Debug.Log(obj.name);
                     obj.SetActive(true);
                 }
                 
             }
+            //step++;
+            //Debug.Log(step);
             return step++;
         }
         return step;

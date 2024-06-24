@@ -5748,6 +5748,8 @@ MonoBehaviour:
       - {fileID: 200025463}
       - {fileID: 16116275}
       - {fileID: 572997119}
+    - objects:
+      - {fileID: 454388269}
   ElectricMeter: {fileID: 1525858943}
   SpotLight: {fileID: 93817390}
   Switch: {fileID: 1505559510}
@@ -9026,7 +9028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &454388270
 BoxCollider:
   m_ObjectHideFlags: 0
