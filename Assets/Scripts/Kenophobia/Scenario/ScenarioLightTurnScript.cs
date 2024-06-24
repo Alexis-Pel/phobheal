@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScenarioLightTurnScript : MonoBehaviour
 {
@@ -14,11 +15,15 @@ public class ScenarioLightTurnScript : MonoBehaviour
     public int nbLigth = 0;
     public List<SwitchScript> Switchs;
     public KenophobiaManager kenophobiaManager;
+    public TMP_Text textMeshPro;
+    public Transform player;
 
     void Start(){
+        player = Camera.main.transform;
         ElectricMeter._isOn = true;
         SpotLight.SetActive(false);
         Switch._isOn = false;
+        textMeshPro.text = "Éteigner toutes les lumières ...\n4/4";
 
         foreach (var Object in Objects.Steps[step].objects)
         {
@@ -37,7 +42,7 @@ public class ScenarioLightTurnScript : MonoBehaviour
                         case 0:
                             return TriggersLights();
                         case 1:
-                            return TriggersBedrooms();
+                            return TriggersBedroom();
                         default:
                             return ExampleStepOne();
                     }
@@ -55,17 +60,25 @@ public class ScenarioLightTurnScript : MonoBehaviour
 
     bool TriggersLights(){
         int nb_isOn = 0;
+        bool _isOn = false;
         foreach (var switchObject in Switchs)
         {
             if(switchObject._isOn) {
                 nb_isOn++;
             }
         }
-        return nb_isOn == 0 ? true : false;
+        _isOn = nb_isOn == 0 ? true : false;
+
+        textMeshPro.text = _isOn ? "Aller vous Couchez ?" : $"Éteigner toutes les lumières ...\n{nb_isOn}/4";
+        return _isOn;
     }
 
-    bool TriggersBedrooms(){
-        if(kenophobiaManager._isInBathroom){
+    bool TriggersBedroom(){
+        float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
+        Debug.Log(distance);
+        if(distance < 2) {
+            //Debug.Log("Enter");
+            textMeshPro.text = "Bien joué(e) le scénario est finis!";
             return true;
         }
         return false;
