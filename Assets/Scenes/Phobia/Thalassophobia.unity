@@ -422,8 +422,8 @@ MonoBehaviour:
   - Atteignez 125m de profondeur
   - 'Atteignez le fond marin '
   stepEndGame: 0
-  pauseScreen: {fileID: 0}
-  triggerInputDetector: {fileID: 0}
+  pauseScreen: {fileID: 1331830019}
+  triggerInputDetector: {fileID: 1053280879}
 --- !u!4 &107531188
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,6 +1602,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d9d1fbfcf69364ffd8f9c6ade9ce90fe, type: 3}
   m_PrefabInstance: {fileID: 1026840746}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1053280877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053280880}
+  - component: {fileID: 1053280879}
+  - component: {fileID: 1053280878}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053280878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053280877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4d7ad5e50fdc143bda249814233123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1053280879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053280877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d651aa5f0fae1a44854368c12b2f352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1053280880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053280877}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1874.0032, y: 67.20772, z: -1852.9186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263982324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,6 +2034,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7188985414154299202, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2025,6 +2090,11 @@ PrefabInstance:
 --- !u!4 &1331830018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7188985414154299202, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+  m_PrefabInstance: {fileID: 1331830017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1331830019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2138198104378552701, guid: 4babb3d764631a649982293d65ae012e, type: 3}
   m_PrefabInstance: {fileID: 1331830017}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1344830689
@@ -3661,3 +3731,4 @@ SceneRoots:
   - {fileID: 1667766084}
   - {fileID: 570480051}
   - {fileID: 107531188}
+  - {fileID: 1053280880}
