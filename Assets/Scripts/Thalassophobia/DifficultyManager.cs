@@ -23,8 +23,11 @@ public class DifficultyManager : MonoBehaviour
     {
         if (debug) ValidDifficulty();
         cageMaterial.SetColor("_Color", new Color32(143, 177, 207, 255));
+        cage.AllowedMoving(false);
     }
 
+
+    [ContextMenu("Validate Difficulty")]
     public void ValidDifficulty()
     {
 
@@ -65,5 +68,6 @@ public class DifficultyManager : MonoBehaviour
         #endregion
 
         IsValidate = true;
+        cage.AllowedMoving(true);
     }
 }

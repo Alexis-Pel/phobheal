@@ -21,11 +21,11 @@ public class DifficultySettingsElement : MonoBehaviour
     {
         slider.onValueChanged.AddListener(delegate { difficulty.SetValue(slider.value); });
         label.text = difficulty.Label;
-        if(difficulty.Label != "Opacité de la cage")
+        if(difficulty.Label != "Opacit? de la cage")
         {
             difficulty.FinalValue = difficulty.InitValue;
         }
-        value.text = difficulty.FinalValue.ToString();
+        value.text = difficulty.FinalValue.ToString("000");
     }
 
     // Update is called once per frame
