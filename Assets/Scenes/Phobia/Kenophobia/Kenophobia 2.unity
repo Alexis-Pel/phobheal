@@ -5839,7 +5839,11 @@ MonoBehaviour:
   Objects:
     Steps:
     - objects: []
+    - objects:
+      - {fileID: 1624099263}
   electricMeterScript: {fileID: 1525858943}
+  trigger: {fileID: 0}
+  kenophobiaManager: {fileID: 0}
 --- !u!1 &324775593
 GameObject:
   m_ObjectHideFlags: 0
