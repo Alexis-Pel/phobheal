@@ -7477,8 +7477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d747bd06047af4d319236b12107c3e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isElectricMeterOn: 0
-  IdScenarioPlayed: 2
+  _isElectricMeterOn: 1
+  IdScenarioPlayed: 1
   _isInBathroom: 0
 --- !u!4 &323763493
 Transform:
@@ -7517,8 +7517,9 @@ MonoBehaviour:
       - {fileID: 200025463}
       - {fileID: 16116275}
       - {fileID: 572997119}
+    - objects: []
   ElectricMeter: {fileID: 1525858943}
-  SpotLight: {fileID: 0}
+  SpotLight: {fileID: 873804426}
   Switch: {fileID: 1505559510}
   nbLigth: 0
   Switchs:
@@ -7526,8 +7527,9 @@ MonoBehaviour:
   - {fileID: 1511598327}
   - {fileID: 1982646738}
   - {fileID: 2066703730}
-  kenophobiaManager: {fileID: 0}
-  textMeshPro: {fileID: 0}
+  kenophobiaManager: {fileID: 323763492}
+  textMeshPro: {fileID: 1123377814}
+  player: {fileID: 0}
 --- !u!114 &323763495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7579,11 +7581,13 @@ MonoBehaviour:
   Objects:
     Steps:
     - objects: []
-    - objects:
-      - {fileID: 566864750}
+    - objects: []
+    - objects: []
   electricMeterScript: {fileID: 1525858943}
   trigger: {fileID: 0}
-  kenophobiaManager: {fileID: 0}
+  kenophobiaManager: {fileID: 323763492}
+  textMeshPro: {fileID: 1123377814}
+  player: {fileID: 696075441}
 --- !u!1 &324775593
 GameObject:
   m_ObjectHideFlags: 0
@@ -18079,6 +18083,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1395831013206231799, guid: bef52b1f17d16474f9b0f73a02e36005, type: 3}
+--- !u!4 &696075441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5804510784034895006, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+  m_PrefabInstance: {fileID: 1221023087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &698494210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22525,6 +22534,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873378866}
   m_Mesh: {fileID: 8011110063408002416, guid: cd0bf29c9c9af6f4098b74076d25f0cd, type: 3}
+--- !u!1 &873804426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4388711389979429264, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+  m_PrefabInstance: {fileID: 965469564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &875090622
 GameObject:
   m_ObjectHideFlags: 0

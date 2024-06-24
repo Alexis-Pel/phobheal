@@ -16,8 +16,10 @@ public class ScenarioLightTurnScript : MonoBehaviour
     public List<SwitchScript> Switchs;
     public KenophobiaManager kenophobiaManager;
     public TMP_Text textMeshPro;
+    public Transform player;
 
     void Start(){
+        player = Camera.main.transform;
         ElectricMeter._isOn = true;
         SpotLight.SetActive(false);
         Switch._isOn = false;
@@ -40,7 +42,7 @@ public class ScenarioLightTurnScript : MonoBehaviour
                         case 0:
                             return TriggersLights();
                         case 1:
-                            return TriggersBedrooms();
+                            return TriggersBedroom();
                         default:
                             return ExampleStepOne();
                     }
@@ -71,9 +73,12 @@ public class ScenarioLightTurnScript : MonoBehaviour
         return _isOn;
     }
 
-    bool TriggersBedrooms(){
-        if(kenophobiaManager._isInBathroom){
-            textMeshPro.text = "Le scénario n°1 est finis ";
+    bool TriggersBedroom(){
+        float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
+        Debug.Log(distance);
+        if(distance < 2) {
+            //Debug.Log("Enter");
+            textMeshPro.text = "Bien joué(e) le scénario est finis!";
             return true;
         }
         return false;

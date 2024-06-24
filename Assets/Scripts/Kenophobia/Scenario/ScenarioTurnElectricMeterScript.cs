@@ -17,6 +17,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
 
     void Start(){
         // Update Objects and variables at the beginning of the scenario
+        player = Camera.main.transform;
         textMeshPro.text = "Aller au compteur \npour réactivé le courant...";
         UpdateStartScenario();
     }
@@ -69,12 +70,6 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
     }
 
     bool TriggerBedroom(){
-        /*if(kenophobiaManager._isInBathroom){
-            textMeshPro.text = "Bien joué(e) le scénario est finis!";
-            return true;
-        }
-        return false;*/
-
         float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
         Debug.Log(distance);
         if(distance < 2) {
