@@ -9,6 +9,8 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
     public bool test = false;
     public StepGameObjectsList Objects;
     public ElectricMeterScript electricMeterScript;
+    public GameObject trigger;
+    public KenophobiaManager kenophobiaManager;
 
     void Start(){
         // Update Objects and variables at the beginning of the scenario
@@ -23,6 +25,10 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
                     {
                         case 15542: // Example
                             return true;
+                        case 0:
+                            return TriggerElectricMeter();
+                        case 1:
+                        return TriggerBedroom();
                         default:
                             return ExampleStepOne();
                     }
@@ -33,6 +39,20 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         // Example and test function 
         if (test){
             test = false;
+            return true;
+        }
+        return false;
+    }
+
+    bool TriggerElectricMeter(){
+        if (electricMeterScript._isOn){
+            return true;
+        }
+        return false;
+    }
+
+    bool TriggerBedroom(){
+        if(kenophobiaManager._isInBathroom){
             return true;
         }
         return false;
