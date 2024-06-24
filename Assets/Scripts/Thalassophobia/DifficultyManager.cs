@@ -18,8 +18,11 @@ public class DifficultyManager : MonoBehaviour
     private void Start()
     {
         if (debug) ValidDifficulty();
+        cage.AllowedMoving(false);
     }
 
+
+    [ContextMenu("Validate Difficulty")]
     public void ValidDifficulty()
     {
         #region playerObjective
@@ -36,5 +39,6 @@ public class DifficultyManager : MonoBehaviour
         #endregion
 
         IsValidate = true;
+        cage.AllowedMoving(true);
     }
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fe4f25294de34bba8f8739a559a2f, type: 3}
   m_Name: FishSpawn
   m_EditorClassIdentifier: 
-  Label: Temps apparition Poisson (s)
+  Label: "Densit\xE9 Poisson"
   InitValue: 0.5
   FinalValue: 1
