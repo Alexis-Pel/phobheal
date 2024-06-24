@@ -38,18 +38,18 @@ public class TriggerInputDetector : MonoBehaviour
 
         bool isButtonPressed = false;
 
-        if (_inputData._rightController.TryGetFeatureValue(CommonUsages.trigger, out rightTriggerValue) || _inputData._leftController.TryGetFeatureValue(CommonUsages.trigger, out leftTriggerValue))
-        {
-            // Use the highest trigger value of the two controllers
-            triggerValue = Mathf.Max(rightTriggerValue, leftTriggerValue);
-            //leftScoreDisplay.text = triggerValue.ToString("#.00");
-            Debug.Log("triggerValue: " + triggerValue);
-                        
-            if (triggerValue > 0.5)
-            {
-                isButtonPressed = true;
-            }
-        }
+        //if (_inputData._rightController.TryGetFeatureValue(CommonUsages.trigger, out rightTriggerValue) || _inputData._leftController.TryGetFeatureValue(CommonUsages.trigger, out leftTriggerValue))
+        //{
+        //    // Use the highest trigger value of the two controllers
+        //    triggerValue = Mathf.Max(rightTriggerValue, leftTriggerValue);
+        //    //leftScoreDisplay.text = triggerValue.ToString("#.00");
+        //    Debug.Log("triggerValue: " + triggerValue);
+
+        //    if (triggerValue > 0.5)
+        //    {
+        //        isButtonPressed = true;
+        //    }
+        //}
 
         if (_inputData._rightController.TryGetFeatureValue(CommonUsages.primaryButton, out rightAbutton) || _inputData._leftController.TryGetFeatureValue(CommonUsages.primaryButton, out leftAbutton))
         {
