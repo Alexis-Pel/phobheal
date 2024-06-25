@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     private int stepCompleted = 0;
 
     [SerializeField] private GameObject pauseScreen;
-    private bool gamePaused = false;
     public TriggerInputDetector triggerInputDetector;
 
     public static GameManager Instance; // A static reference to the GameManager instance
+
+    private bool gamePaused = false;
+    private bool isWin = false;
 
     void Awake()
     {
@@ -56,9 +58,9 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        // TODO: Show win screen
+        if (isWin) return;
+        isWin = true;
         Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        //Invoke(nameof(StopGame), 5f);
     }
 
 
