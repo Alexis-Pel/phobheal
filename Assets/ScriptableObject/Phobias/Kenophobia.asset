@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Kenophobia
   m_scene: 4
-  m_image: {fileID: 0}
+  m_image: {fileID: 21300000, guid: e93fae363c14fe941a4e5970d4d3bff0, type: 3}
   m_StartPosition: {x: 0, y: 0, z: 0}
