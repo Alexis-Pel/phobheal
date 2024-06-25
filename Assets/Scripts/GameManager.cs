@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject canva;
+    public GameObject endMenuCanva;
     public int totalSteps;
     public string[] stepsObjective;
     public bool stepEndGame;
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         // TODO: Show win screen
-        Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
+        Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
         //Invoke(nameof(StopGame), 5f);
     }
 
