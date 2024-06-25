@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017034083, g: 0.000000025772884, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017033932, g: 0.000000025772884, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1347,6 +1347,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 37440588}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 37440596}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 323763492}
@@ -1593,6 +1597,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.08, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &37440596 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+  m_PrefabInstance: {fileID: 37440586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &39367374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9467,8 +9476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d747bd06047af4d319236b12107c3e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isElectricMeterOn: 0
-  IdScenarioPlayed: 2
+  _isElectricMeterOn: 1
+  IdScenarioPlayed: 3
   _isInBathroom: 0
 --- !u!4 &323763493
 Transform:
@@ -9528,7 +9537,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323763490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 816a6f93f2d327f4186ad5e2af4b6f0b, type: 3}
   m_Name: 
@@ -9557,6 +9566,9 @@ MonoBehaviour:
     objects:
     - {fileID: 847570593}
   instructionsText: {fileID: 1123377814}
+  electricMeterScript: {fileID: 1525858943}
+  Objects:
+    Steps: []
 --- !u!114 &323763496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47086,6 +47098,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1505559508}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1505559516}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 323763492}
@@ -47332,6 +47348,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.08, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &1505559516 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+  m_PrefabInstance: {fileID: 1505559506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1506871663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47558,6 +47579,10 @@ PrefabInstance:
       propertyPath: Switch
       value: 
       objectReference: {fileID: 1511598325}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1511598333}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
@@ -47805,6 +47830,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.08, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &1511598333 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+  m_PrefabInstance: {fileID: 1511598323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1519468085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48035,6 +48065,12 @@ MonoBehaviour:
   - {fileID: 1371458097}
   - {fileID: 1782476872}
   - {fileID: 1842836807}
+  switches:
+  - {fileID: 2066703730}
+  - {fileID: 1982646738}
+  - {fileID: 1511598327}
+  - {fileID: 1505559510}
+  - {fileID: 37440590}
 --- !u!1 &1525976347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2026103698101026713, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
@@ -55017,7 +55053,7 @@ Light:
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0.4
-    m_NearPlane: 0.26
+    m_NearPlane: 0.5
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -61842,6 +61878,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1982646739}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1982646751}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 323763492}
@@ -62121,6 +62161,11 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!82 &1982646751 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+  m_PrefabInstance: {fileID: 1982646736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1983364537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64228,6 +64273,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2066703728}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2066703736}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 323763492}
@@ -64235,6 +64284,10 @@ PrefabInstance:
       propertyPath: lampRenderer
       value: 
       objectReference: {fileID: 1161258150}
+    - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: switchOnSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e161a43f94cc18445a980ff4c7460e57, type: 3}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: lightOnMaterial
       value: 
@@ -64246,6 +64299,10 @@ PrefabInstance:
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: materialIndexToChange
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 129440705048642472, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: m_IsActive
@@ -64486,6 +64543,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.08, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &2066703736 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -2782495988951304933, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
+  m_PrefabInstance: {fileID: 2066703726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2066818450
 GameObject:
   m_ObjectHideFlags: 0

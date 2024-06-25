@@ -15,6 +15,7 @@ public class ElectricMeterSwitchScript : MonoBehaviour
 
     [SerializeField]
     private InteractorSwitchElectricMeterScript interactorSwitchElectricMeterScript;
+    public ElectricMeterScript electricMeterScript;
 
     public bool _isOn;
 
@@ -36,7 +37,7 @@ public class ElectricMeterSwitchScript : MonoBehaviour
 
         foreach (Transform electricMeterSwitch in electricMeterSwitchTransformList)
         {
-            Debug.Log(electricMeterSwitch.transform.localEulerAngles.x+"    "+rotation.x);
+            //Debug.Log(electricMeterSwitch.transform.localEulerAngles.x+"    "+rotation.x);
             if (!Mathf.Approximately(electricMeterSwitch.transform.localEulerAngles.x, rotation.x))
             {
                 allSwitchesInPosition = false;
@@ -46,14 +47,16 @@ public class ElectricMeterSwitchScript : MonoBehaviour
 
         if (allSwitchesInPosition)
         {
-            Debug.Log("All switches are in position.");
+            //Debug.Log("All switches are in position.");
             electricMeterSwitchTransform.localEulerAngles = new Vector3(0f,90f,0);
             _isOn = true;
             interactorSwitchElectricMeterScript._isOn = true;
+            electricMeterScript.electricMeterSwitchMasterIsOn++;
+            electricMeterScript.electricMeterSwitchMasterIsOn = electricMeterScript.electricMeterSwitchMasterIsOn+1 <= 3 ? electricMeterScript.electricMeterSwitchMasterIsOn++ : electricMeterScript.electricMeterSwitchMasterIsOn;
         }
         else
         {
-            Debug.Log("Not all switches are in position.");
+            //Debug.Log("Not all switches are in position.");
             electricMeterSwitchTransform.localEulerAngles = new Vector3(135f,90f,0);
             _isOn = false;
             interactorSwitchElectricMeterScript._isOn = false;
@@ -62,6 +65,10 @@ public class ElectricMeterSwitchScript : MonoBehaviour
         foreach (GameObject Light in LightsList){
             Light.SetActive(_isOn);
         }
+
+        if(electricMeterScript.electricMeterSwitchMasterIsOn >= 3){
+            electricMeterScript._isOn = true;
+        }
     }
 
     public void UpdateLights(){
@@ -69,4 +76,5 @@ public class ElectricMeterSwitchScript : MonoBehaviour
             Light.SetActive(_isOn);
         }
     }
+
 }

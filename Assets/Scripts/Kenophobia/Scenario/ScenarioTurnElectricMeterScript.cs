@@ -62,6 +62,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
     }
 
     bool TriggerElectricMeter(){
+        //Debug.Log(electricMeterScript._isOn);
         if (electricMeterScript._isOn){
             textMeshPro.text = "Le courant est réactivé,\n vous pouvez retourner dans votre chambre...";
             return true;
@@ -71,7 +72,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
 
     bool TriggerBedroom(){
         float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if(distance < 2) {
             //Debug.Log("Enter");
             textMeshPro.text = "Bien joué(e) le scénario est finis!";

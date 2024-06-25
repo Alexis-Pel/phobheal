@@ -19,6 +19,8 @@ public class ElectricMeterScript : MonoBehaviour
     
     public List<SwitchScript> switches;
 
+    public int electricMeterSwitchMasterIsOn = 0;
+
     // Start is called before the first frame update
     void Start()
     {

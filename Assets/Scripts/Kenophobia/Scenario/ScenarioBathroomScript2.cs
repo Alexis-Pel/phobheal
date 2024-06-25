@@ -28,6 +28,8 @@ public class ScenarioBathroomScript2 : MonoBehaviour
 
     public ElectricMeterScript electricMeterScript;
 
+    public StepGameObjectsList Objects;
+
     void Start()
     {
         electricMeterScript.SetToLightStarted(false);
