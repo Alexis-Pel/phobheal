@@ -1384,17 +1384,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
---- !u!114 &716748244 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
-  m_PrefabInstance: {fileID: 716748243}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457e1d148dd7a43ec8568c26ffe06fb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &853698773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,18 +3091,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cage
       objectReference: {fileID: 0}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: maxSpeed
       value: 0.015
@@ -3193,10 +3170,6 @@ PrefabInstance:
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: actionProperty.m_Action.m_ExpectedControlType
       value: Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.data[0].m_Id
@@ -3303,14 +3276,6 @@ PrefabInstance:
       value: Action
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 716748244}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: action.m_SingletonActionBindings.Array.data[1].m_Processors
       value: 
       objectReference: {fileID: 0}
@@ -3327,16 +3292,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: action.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
       value: <XRController>/triggerPressed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WinGame
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: action.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
@@ -3410,14 +3367,6 @@ PrefabInstance:
       propertyPath: actionProperty.m_Action.m_SingletonActionBindings.Array.data[3].m_Action
       value: Action Property
       objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3470,26 +3419,10 @@ PrefabInstance:
       propertyPath: m_OnValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GoalElevator, Assembly-CSharp
       objectReference: {fileID: 0}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7620773682999021510, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: af0ee94bda82ccc4a871b71464d5859c, type: 2}
-    - target: {fileID: 7750331792730609302, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_NbState
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

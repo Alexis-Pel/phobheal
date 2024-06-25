@@ -1618,17 +1618,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
---- !u!114 &673265193 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
-  m_PrefabInstance: {fileID: 673265192}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457e1d148dd7a43ec8568c26ffe06fb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1246462648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,18 +2341,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cage
       objectReference: {fileID: 0}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: maxSpeed
       value: 0.2
@@ -2373,40 +2350,8 @@ PrefabInstance:
       value: 1215
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: heightText
-      value: 
-      objectReference: {fileID: 1477352112}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: heightStart
       value: 85.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 673265193}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WinGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_LocalScale.x
@@ -2468,18 +2413,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ed0637d930f21436291cd165e9641881, type: 2}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
-    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8657383330190530276, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
