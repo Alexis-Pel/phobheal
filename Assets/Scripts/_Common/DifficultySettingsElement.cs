@@ -25,12 +25,12 @@ public class DifficultySettingsElement : MonoBehaviour
         {
             difficulty.FinalValue = difficulty.InitValue;
         }
-        value.text = difficulty.FinalValue.ToString("000");
+        value.text = difficulty.FinalValue.ToString("00.0");
     }
 
     // Update is called once per frame
     void Update()
     {
-        value.text = difficulty.FinalValue.ToString("000");
+        value.text = difficulty.FinalValue.ToString("00.0");
     }
 }
