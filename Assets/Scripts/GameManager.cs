@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject canva;
     public int totalSteps;
+    public string[] stepsObjective;
+    public bool stepEndGame;
 
     private ScenesEnum currentScenarioIndex;
     private int stepCompleted = 0;
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour
         //print(stepCompleted);
         stepCompleted++;
 
-        if (stepCompleted == totalSteps)
+        if ((stepCompleted == totalSteps) && stepEndGame)
         {
             WinGame();
         }
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         // TODO: Show win screen
         Instantiate(canva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        Invoke(nameof(StopGame), 5f);
+        //Invoke(nameof(StopGame), 5f);
     }
 
 
