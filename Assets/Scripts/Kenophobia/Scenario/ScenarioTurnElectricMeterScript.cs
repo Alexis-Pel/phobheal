@@ -20,6 +20,11 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         player = Camera.main.transform;
         textMeshPro.text = "Aller au compteur \npour réactivé le courant...";
         UpdateStartScenario();
+
+        foreach (var Object in Objects.Steps[step].objects)
+        {
+            Object.SetActive(true);
+        }
     }
 
     void Update()
@@ -62,8 +67,10 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
     }
 
     bool TriggerElectricMeter(){
+        //Debug.Log(electricMeterScript._isOn);
         if (electricMeterScript._isOn){
             textMeshPro.text = "Le courant est réactivé,\n vous pouvez retourner dans votre chambre...";
+            electricMeterScript.ActualiseElectricMeter(true);
             return true;
         }
         return false;
@@ -71,7 +78,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
 
     bool TriggerBedroom(){
         float distance = Vector3.Distance(player.position, new Vector3(-2f,0f,5f));
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if(distance < 2) {
             //Debug.Log("Enter");
             textMeshPro.text = "Bien joué(e) le scénario est finis!";

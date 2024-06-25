@@ -17,6 +17,10 @@ public class ElectricMeterScript : MonoBehaviour
 
     private bool _isStarted = false;
     
+    public List<SwitchScript> switches;
+
+    public int electricMeterSwitchMasterIsOn = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +62,13 @@ public class ElectricMeterScript : MonoBehaviour
         SwitchElectricity();
         foreach (GameObject Light in Lights){
             Light.SetActive(_isOnLoc);
+        }
+    }
+
+    public void SetToLightStarted(bool _isOnTemp){
+        foreach (SwitchScript switche in switches)
+        {
+            switche.SetToLight(_isOnTemp);
         }
     }
 }

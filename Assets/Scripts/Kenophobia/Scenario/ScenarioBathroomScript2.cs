@@ -26,8 +26,13 @@ public class ScenarioBathroomScript2 : MonoBehaviour
 
     private Transform playerTransform; // Reference to the player's transform
 
+    public ElectricMeterScript electricMeterScript;
+
+    public StepGameObjectsList Objects;
+
     void Start()
     {
+        electricMeterScript.SetToLightStarted(false);
         totalSteps = steps.Count;
         // Find the Main Camera and use it as the player's transform
         playerTransform = Camera.main.transform;

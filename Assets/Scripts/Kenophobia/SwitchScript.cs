@@ -25,7 +25,7 @@ public class SwitchScript : MonoBehaviour
 
     [SerializeField] private AudioClip switchOnSound;
     [SerializeField] private AudioClip switchOffSound;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class SwitchScript : MonoBehaviour
 
         lastIsOnState = _isOn; // Initialize the last state
         // Check the electric meter status and set the initial state
-        if (gameManager != null && gameManager._isElectricMeterOn)
+        /*if (gameManager != null && gameManager._isElectricMeterOn)
         {
             _isOn = true;
             Switch.transform.localEulerAngles = new Vector3(10f, 0f, 0f);
@@ -43,7 +43,7 @@ public class SwitchScript : MonoBehaviour
         {
             _isOn = false;
             Switch.transform.localEulerAngles = new Vector3(-10f, 0f, 0f);
-        }
+        }*/
         UpdateSwitchState();
     }
 
@@ -108,5 +108,24 @@ public class SwitchScript : MonoBehaviour
     private void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+
+    public void SetToLight(bool _isOnTemp){
+        //Debug.Log(_isOnTemp);
+        Vector3 rotation = !_isOnTemp ? new Vector3(-10f, 0, 0) : new Vector3(10f, 0, 0);
+
+        if (!Mathf.Approximately(Switch.transform.localEulerAngles.x, rotation.x)){
+            Switch.transform.localEulerAngles = rotation;
+            
+            if(!_isOnTemp){
+                PlaySound(switchOnSound);
+                _isOn = false;
+            }else{
+                PlaySound(switchOffSound);
+                _isOn = true;
+            }
+
+             Light.enabled = _isOnTemp;
+        }
     }
 }
