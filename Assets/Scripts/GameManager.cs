@@ -6,24 +6,22 @@ public class GameManager : MonoBehaviour
     public GameObject endMenuCanva;
     public int totalSteps;
     public string[] stepsObjective;
+    
     public bool stepEndGame;
-
-    private ScenesEnum currentScenarioIndex;
     private int stepCompleted = 0;
 
     [SerializeField] private GameObject pauseScreen;
-    private bool gamePaused = false;
     public TriggerInputDetector triggerInputDetector;
 
     public static GameManager Instance; // A static reference to the GameManager instance
 
+    private bool gamePaused = false;
+    private bool isWin = false;
+
     void Awake()
     {
         if (Instance == null) // If there is no instance already
-        {
-            DontDestroyOnLoad(gameObject);
             Instance = this;
-        }
         else if (Instance != this) // If there is already an instance and it's not `this` instance
             Destroy(gameObject); // Destroy the GameObject, this component is attached to
     }
@@ -57,9 +55,9 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        // TODO: Show win screen
+        if (isWin) return;
+        isWin = true;
         Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        //Invoke(nameof(StopGame), 5f);
     }
 
 
@@ -72,6 +70,7 @@ public class GameManager : MonoBehaviour
     private void ReturnToMenu()
     {
         CancelInvoke();
+        isWin = false;
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
 
@@ -103,9 +102,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-        private void TogglePause()
+    private void TogglePause()
     {
-        //Debug.Log("TogglePause !!!");
         gamePaused = !gamePaused;
         Time.timeScale = gamePaused ? 0 : 1;
         pauseScreen.SetActive(gamePaused); 
