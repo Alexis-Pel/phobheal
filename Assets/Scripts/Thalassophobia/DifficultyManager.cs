@@ -22,7 +22,7 @@ public class DifficultyManager : MonoBehaviour
     private void Start()
     {
         if (debug) ValidDifficulty();
-        cageMaterial.SetColor("_Color", new Color32(143, 177, 207, 255));
+        if (cageMaterial != null) cageMaterial.SetColor("_Color", new Color32(143, 177, 207, 255));
         cage.AllowedMoving(false);
     }
 
