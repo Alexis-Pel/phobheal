@@ -109,4 +109,23 @@ public class SwitchScript : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
     }
+
+    public void SetToLight(bool _isOnTemp){
+        Vector3 rotation = !_isOnTemp ? new Vector3(-10f, 0, 0) : new Vector3(10f, 0, 0);
+
+        if (!Mathf.Approximately(Switch.transform.localEulerAngles.x, rotation.x)){
+            Switch.transform.localEulerAngles = rotation;
+            
+            if(!_isOnTemp){
+                PlaySound(switchOnSound);
+                _isOn = false;
+
+            }else{
+                PlaySound(switchOffSound);
+                _isOn = true;
+            }
+
+             Light.enabled = _isOnTemp;
+        }
+    }
 }

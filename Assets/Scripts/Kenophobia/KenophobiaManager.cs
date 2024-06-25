@@ -21,6 +21,9 @@ public class KenophobiaManager : MonoBehaviour
             case 1:
                 gameObject.GetComponent<ScenarioLightTurnScript>().enabled = true;
                 break;
+            case 2:
+                gameObject.GetComponent<ScenarioBathroomScript2>().enabled = true;
+                break;
             case 3:
                 gameObject.GetComponent<ScenarioTurnElectricMeterScript>().enabled = true;
                 break;

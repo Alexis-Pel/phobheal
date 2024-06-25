@@ -37575,6 +37575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canva: {fileID: 0}
   totalSteps: 0
+  stepsObjective: []
+  stepEndGame: 0
   pauseScreen: {fileID: 905514201}
   triggerInputDetector: {fileID: 147165757}
 --- !u!4 &1483598292
