@@ -154,14 +154,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canva: {fileID: 3054715266472502845, guid: 0b2c7441de24a42059d1ed3ab06b58ee, type: 3}
   totalSteps: 4
-  pauseScreen: {fileID: 499839871}
-  triggerInputDetector: {fileID: 2044427965}
   stepsObjective:
   - Atteignez 25m de hauteur
   - Atteignez 50m de hauteur
   - Atteignez 75m de hauteur
   - Atteignez le sommet de la tour
   stepEndGame: 0
+  pauseScreen: {fileID: 499839871}
+  triggerInputDetector: {fileID: 2044427965}
 --- !u!4 &20199153
 Transform:
   m_ObjectHideFlags: 0
@@ -740,6 +740,10 @@ PrefabInstance:
     - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_AllowDynamicResolution
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942351122593776382, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7188985414154299202, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1633,7 +1637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &660163427
 Light:
   m_ObjectHideFlags: 0
@@ -2431,9 +2435,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 307881435703604373, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2285365354209675939, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_Name
       value: Cage (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
+    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
+    - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: maxSpeed
@@ -2539,6 +2559,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ed0637d930f21436291cd165e9641881, type: 2}
+    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
+    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7295319431415082864, guid: 2251c542e97b540cbb3ce99a891f3050, type: 2}
+    - target: {fileID: 7046143733021627115, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8657383330190530276, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8
