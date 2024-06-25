@@ -16,6 +16,8 @@ public class KenophobiaManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        IdScenarioPlayed = PlayerPrefs.GetInt("SelectedLevel", 1); // Defaults to level 1 if no key is found
+        
         switch (IdScenarioPlayed)
         {
             case 1:

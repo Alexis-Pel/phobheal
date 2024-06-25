@@ -43,10 +43,7 @@ public class GoalElevator : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isAllowedToMoved)
-        {
-            return;
-        }
+        if (!isAllowedToMoved) return;
 
         float newHeight = transform.position.y + GetOffset();
 
@@ -62,7 +59,7 @@ public class GoalElevator : MonoBehaviour
 
         heightText.text = ((transform.position.y - heightStart) / transform.localScale.y).ToString("00");
 
-        if (transform.position.y == HeightGoal)
+        if (transform.position.y == HeightGoal && goalEvent != null)
         {
             goalEvent.Invoke();
         }
