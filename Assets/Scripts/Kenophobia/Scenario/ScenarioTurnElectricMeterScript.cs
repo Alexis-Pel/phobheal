@@ -20,6 +20,11 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         player = Camera.main.transform;
         textMeshPro.text = "Aller au compteur \npour réactivé le courant...";
         UpdateStartScenario();
+
+        foreach (var Object in Objects.Steps[step].objects)
+        {
+            Object.SetActive(true);
+        }
     }
 
     void Update()

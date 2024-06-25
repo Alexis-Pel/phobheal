@@ -2900,6 +2900,7 @@ MonoBehaviour:
   - {fileID: 909733968}
   LightsList: []
   interactorSwitchElectricMeterScript: {fileID: 69715932}
+  electricMeterScript: {fileID: 1525858943}
   _isOn: 0
 --- !u!64 &69715935
 MeshCollider:
@@ -8283,100 +8284,16 @@ Halo:
     serializedVersion: 2
     rgba: 4286611584
   m_Size: 0.05
---- !u!1 &285242068
+--- !u!1 &285242068 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4609168572715736, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+  m_PrefabInstance: {fileID: 1564457607}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 285242069}
-  - component: {fileID: 285242070}
-  m_Layer: 0
-  m_Name: Light Bathroom (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &285242069
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285242068}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.385, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1564457608}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &285242070
+--- !u!108 &285242070 stripped
 Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5910350579307407939, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+  m_PrefabInstance: {fileID: 1564457607}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285242068}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.45
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &289129522
 GameObject:
   m_ObjectHideFlags: 0
@@ -13243,6 +13160,7 @@ MonoBehaviour:
   - {fileID: 217922731}
   - {fileID: 1624606162}
   interactorSwitchElectricMeterScript: {fileID: 419975808}
+  electricMeterScript: {fileID: 1525858943}
   _isOn: 0
 --- !u!64 &419975811
 MeshCollider:
@@ -31035,6 +30953,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1902867274}
     m_Modifications:
+    - target: {fileID: 4609168572715736, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 761187056149873997, guid: f920163421f537643a94fbbfe25244f9, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -48060,8 +47982,8 @@ MonoBehaviour:
   gameManager: {fileID: 323763492}
   Lights:
   - {fileID: 217922731}
-  - {fileID: 1624606162}
-  - {fileID: 1071723892}
+  - {fileID: 285242068}
+  - {fileID: 1655789570}
   - {fileID: 1371458097}
   - {fileID: 1782476872}
   - {fileID: 1842836807}
@@ -48071,6 +47993,7 @@ MonoBehaviour:
   - {fileID: 1511598327}
   - {fileID: 1505559510}
   - {fileID: 37440590}
+  electricMeterSwitchMasterIsOn: 0
 --- !u!1 &1525976347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2026103698101026713, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
@@ -49037,6 +48960,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1552564950}
     m_Modifications:
+    - target: {fileID: 4609168572715736, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 761187056149873997, guid: f920163421f537643a94fbbfe25244f9, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -49081,6 +49008,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1730319538400154268, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4388711389979429264, guid: f920163421f537643a94fbbfe25244f9, type: 3}
       propertyPath: m_Name
       value: Lamp_Ceiling_Apt_03 (2)
@@ -49095,9 +49026,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 761187056149873997, guid: f920163421f537643a94fbbfe25244f9, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1624606163}
-    - targetCorrespondingSourceObject: {fileID: 761187056149873997, guid: f920163421f537643a94fbbfe25244f9, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 285242069}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f920163421f537643a94fbbfe25244f9, type: 3}
 --- !u!4 &1564457608 stripped
@@ -51743,6 +51671,11 @@ Transform:
   - {fileID: 2046495140}
   m_Father: {fileID: 444828341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1655789570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4609168572715736, guid: f920163421f537643a94fbbfe25244f9, type: 3}
+  m_PrefabInstance: {fileID: 965469564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1657789751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63728,6 +63661,7 @@ MonoBehaviour:
   - {fileID: 909733963}
   LightsList: []
   interactorSwitchElectricMeterScript: {fileID: 2037907231}
+  electricMeterScript: {fileID: 1525858943}
   _isOn: 0
 --- !u!64 &2037907234
 MeshCollider:
