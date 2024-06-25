@@ -6,9 +6,8 @@ public class GameManager : MonoBehaviour
     public GameObject endMenuCanva;
     public int totalSteps;
     public string[] stepsObjective;
+    
     public bool stepEndGame;
-
-    private ScenesEnum currentScenarioIndex;
     private int stepCompleted = 0;
 
     [SerializeField] private GameObject pauseScreen;
