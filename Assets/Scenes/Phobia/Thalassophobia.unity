@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457e1d148dd7a43ec8568c26ffe06fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canva: {fileID: 3054715266472502845, guid: 0b2c7441de24a42059d1ed3ab06b58ee, type: 3}
+  endMenuCanva: {fileID: 0}
   totalSteps: 4
   stepsObjective:
   - Atteignez 25m de profondeur
@@ -2034,10 +2034,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8699571704012448072, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 107531187}
+    - target: {fileID: 8699571704012448072, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4071509076411266329, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1331830021}
   m_SourcePrefab: {fileID: 100100000, guid: 4babb3d764631a649982293d65ae012e, type: 3}
 --- !u!4 &1331830018 stripped
 Transform:
@@ -2047,6 +2058,76 @@ Transform:
 --- !u!1 &1331830019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2138198104378552701, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+  m_PrefabInstance: {fileID: 1331830017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1331830020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4071509076411266329, guid: 4babb3d764631a649982293d65ae012e, type: 3}
+  m_PrefabInstance: {fileID: 1331830017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1331830021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331830020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1331830022}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 0
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
+--- !u!4 &1331830022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4071509076411266330, guid: 4babb3d764631a649982293d65ae012e, type: 3}
   m_PrefabInstance: {fileID: 1331830017}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1344830689
@@ -3554,6 +3635,10 @@ PrefabInstance:
       value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 1663051402015214479, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1663051402015214479, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -3568,7 +3653,7 @@ PrefabInstance:
     - target: {fileID: 7635851525861821018, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 1300449065}
+      objectReference: {fileID: 1331830020}
     - target: {fileID: 7635851525861821018, guid: 422b62f6a4aa0154d8174321c00bcf78, type: 3}
       propertyPath: underWater
       value: 
