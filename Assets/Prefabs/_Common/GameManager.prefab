@@ -44,4 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457e1d148dd7a43ec8568c26ffe06fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canva: {fileID: 3054715266472502845, guid: 0b2c7441de24a42059d1ed3ab06b58ee, type: 3}
+  endMenuCanva: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
+  totalSteps: 0
+  stepsObjective: []
+  stepEndGame: 0
+  pauseScreen: {fileID: 0}
+  triggerInputDetector: {fileID: 0}

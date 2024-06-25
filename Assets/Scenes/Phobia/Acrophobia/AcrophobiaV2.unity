@@ -123,60 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &20199151
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 20199153}
-  - component: {fileID: 20199152}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &20199152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20199151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457e1d148dd7a43ec8568c26ffe06fb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endMenuCanva: {fileID: 0}
-  totalSteps: 4
-  stepsObjective:
-  - Atteignez 25m de hauteur
-  - Atteignez 50m de hauteur
-  - Atteignez 75m de hauteur
-  - Atteignez le sommet de la tour
-  stepEndGame: 0
-  pauseScreen: {fileID: 499839871}
-  triggerInputDetector: {fileID: 2044427965}
---- !u!4 &20199153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20199151}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1894.6876, y: 1211.5247, z: -1869.1904}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &71831499
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -364,67 +310,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92676763}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &150042795
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2285365354209675939, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_Name
-      value: Cage
-      objectReference: {fileID: 0}
-    - target: {fileID: 2285365354209675939, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597721525055169792, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
 --- !u!1 &260473987
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,24 +575,8 @@ PrefabInstance:
       value: XR Interaction Setup Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
-      propertyPath: m_ClearFlags
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: far clip plane
       value: 4000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071509076411266335, guid: 4babb3d764631a649982293d65ae012e, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4942351122593776382, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_text
@@ -756,7 +625,7 @@ PrefabInstance:
     - target: {fileID: 8699571704012448072, guid: 4babb3d764631a649982293d65ae012e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 20199152}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1660,6 +1529,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 119.6, y: -30, z: 0}
+--- !u!1001 &673265192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 693312379885995430, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: totalSteps
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 499839871}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: triggerInputDetector
+      value: 
+      objectReference: {fileID: 2044427965}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: stepsObjective.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: stepsObjective.Array.data[0]
+      value: Atteignez 25m de hauteur
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: stepsObjective.Array.data[1]
+      value: Atteignez 50m de hauteur
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: stepsObjective.Array.data[2]
+      value: Atteignez 75m de hauteur
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355957331467678761, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: stepsObjective.Array.data[3]
+      value: Atteignez le sommet de la tour
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359970080385746256, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 28783cc415f464827a991e7e9d60fd50, type: 3}
 --- !u!1 &1246462648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +2339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2285365354209675939, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_Name
-      value: Cage (1)
+      value: Cage
       objectReference: {fileID: 0}
     - target: {fileID: 2960082403742400357, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: m_fontAsset
@@ -2422,7 +2380,7 @@ PrefabInstance:
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 20199152}
+      objectReference: {fileID: 0}
     - target: {fileID: 2975793472347195687, guid: 78ee7941f6af9a64db678db30ced8609, type: 3}
       propertyPath: goalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -13300,7 +13258,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 660163428}
   - {fileID: 1904362015}
-  - {fileID: 20199153}
   - {fileID: 1340328905}
   - {fileID: 1791314960}
   - {fileID: 426061186}
@@ -13308,5 +13265,5 @@ SceneRoots:
   - {fileID: 1477352110}
   - {fileID: 647438146}
   - {fileID: 1846393389}
-  - {fileID: 150042795}
   - {fileID: 2044427966}
+  - {fileID: 673265192}
