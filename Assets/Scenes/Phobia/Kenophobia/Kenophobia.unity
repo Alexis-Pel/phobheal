@@ -8617,7 +8617,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9468,7 +9468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isElectricMeterOn: 0
-  IdScenarioPlayed: 1
+  IdScenarioPlayed: 2
   _isInBathroom: 0
 --- !u!4 &323763493
 Transform:
@@ -15198,7 +15198,7 @@ Transform:
   m_GameObject: {fileID: 492553083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.043619405, z: -0, w: 0.9990483}
-  m_LocalPosition: {x: 1.3599, y: 1.73, z: 3.2772}
+  m_LocalPosition: {x: 1.3599, y: 1.767, z: 3.2772}
   m_LocalScale: {x: 0.60000044, y: 0.6, z: 0.60000044}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15217,7 +15217,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 4
+  m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -26674,7 +26674,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -33965,7 +33965,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071723892}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -38119,7 +38119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5984872781332585375, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_TurnAmount
-      value: 1
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6298170530180427787, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_StartingGroupMembers.Array.data[2]
@@ -47079,7 +47079,7 @@ PrefabInstance:
       objectReference: {fileID: 1071723894}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: _isOn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5948562593797818032, guid: 9084b2c51fc954e85ba57d771c3891e6, type: 3}
       propertyPath: Switch
@@ -48049,9 +48049,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1525976347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78821793f9c03d144ab5763c10ac6573, type: 3}
+  m_Script: {fileID: 11500000, guid: fb85afa3326e75342ae4f9772756459c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepSounds:
+  - {fileID: 8300000, guid: fc6b33e5982718245b5cd5d257056725, type: 3}
+  - {fileID: 8300000, guid: 3745786c76ecabc4ba4c045005b349ef, type: 3}
+  - {fileID: 8300000, guid: 4b2dc1c53faad744e8fb1f19f106e9dc, type: 3}
+  - {fileID: 8300000, guid: 43c23b9dda1e055419eb96a04143e325, type: 3}
+  - {fileID: 8300000, guid: f59eedaec2665694680b455e03a044b9, type: 3}
+  - {fileID: 8300000, guid: f3b1c5a2a3986ef499eb8818b27ab20c, type: 3}
+  - {fileID: 8300000, guid: 497baf97a731afc4ebe28a977869d1ff, type: 3}
+  - {fileID: 8300000, guid: 655ba50109fe63d469e130506f37ab6d, type: 3}
+  footstepDelay: 0.5
+  footstepVolume: 0.2
 --- !u!82 &1525976355
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62633,7 +62644,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -67228,6 +67239,10 @@ PrefabInstance:
     - target: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
       propertyPath: m_Name
       value: End Menu Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8662721444888562475, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
       propertyPath: m_text
