@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
     private void ReturnToMenu()
     {
         CancelInvoke();
+        isWin = false;
         SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
     }
 
