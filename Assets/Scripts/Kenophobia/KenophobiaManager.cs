@@ -16,10 +16,15 @@ public class KenophobiaManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        IdScenarioPlayed = PlayerPrefs.GetInt("SelectedLevel", 1); // Defaults to level 1 if no key is found
+        
         switch (IdScenarioPlayed)
         {
             case 1:
                 gameObject.GetComponent<ScenarioLightTurnScript>().enabled = true;
+                break;
+            case 2:
+                gameObject.GetComponent<ScenarioBathroomScript2>().enabled = true;
                 break;
             case 3:
                 gameObject.GetComponent<ScenarioTurnElectricMeterScript>().enabled = true;
