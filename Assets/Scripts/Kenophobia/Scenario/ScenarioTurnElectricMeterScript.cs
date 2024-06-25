@@ -70,6 +70,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         //Debug.Log(electricMeterScript._isOn);
         if (electricMeterScript._isOn){
             textMeshPro.text = "Le courant est réactivé,\n vous pouvez retourner dans votre chambre...";
+            electricMeterScript.ActualiseElectricMeter(true);
             return true;
         }
         return false;
