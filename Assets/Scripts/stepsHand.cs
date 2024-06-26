@@ -36,7 +36,7 @@ public class StepsHand : MonoBehaviour
 
     private void SetText()
     {
-        /*handStarText.text = string.Join(" ", stars);
+        handStarText.text = string.Join(" ", stars);
         if(GameManager.Instance.stepsObjective.Length > 0)
         {
             try
@@ -47,6 +47,6 @@ public class StepsHand : MonoBehaviour
             {
                 handText.text = GameManager.Instance.stepsObjective[^1];
             }
-        }*/
+        }
     }
 }
