@@ -79,6 +79,8 @@ public class ScenarioLightTurnScript : MonoBehaviour
         if(distance < 2) {
             //Debug.Log("Enter");
             textMeshPro.text = "Bien joué(e) le scénario est finis!";
+            GameManager.Instance.WinGame();
+            PlayerPrefs.SetInt("SelectedLevel", 2);
             return true;
         }
         return false;
