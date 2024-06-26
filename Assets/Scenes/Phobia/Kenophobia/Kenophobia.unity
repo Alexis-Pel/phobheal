@@ -9394,7 +9394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isElectricMeterOn: 1
-  IdScenarioPlayed: 1
+  IdScenarioPlayed: 3
   _isInBathroom: 0
 --- !u!4 &323763493
 Transform:
@@ -38073,6 +38073,10 @@ PrefabInstance:
     - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550659358971499910, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8125188084966164455, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_IsActive

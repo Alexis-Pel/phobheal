@@ -82,7 +82,7 @@ public class ScenarioTurnElectricMeterScript : MonoBehaviour
         if(distance < 2) {
             //Debug.Log("Enter");
             textMeshPro.text = "Bien joué(e) le scénario est finis!";
-            GameManager.Instance.WinGame();
+            GameManager.Instance.WinGame(true);
             return true;
         }
         return false;

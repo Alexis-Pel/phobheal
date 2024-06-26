@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -54,7 +55,7 @@ public class GameManager : MonoBehaviour
         //TODO: Effets de compl�tion des �tapes
     }
 
-    public void WinGame()
+    public void WinGame(bool Option = false)
     {
         if (isWin) return;
         isWin = true;
@@ -62,6 +63,11 @@ public class GameManager : MonoBehaviour
         if (stepsObjective.Length > 0)
         {
             currentEndMenu.WriteSentence(stepsObjective[Math.Min(stepCompleted - 1, 0)]);
+        }
+        
+        if(Option)
+        {
+            currentEndMenu.hideElement();
         }
     }
 

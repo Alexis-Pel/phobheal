@@ -363,6 +363,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2999340825720053719, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
+      propertyPath: HideElement
+      value: 
+      objectReference: {fileID: 1200671294656866720}
     - target: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
       propertyPath: m_Name
       value: End Menu Canvas (1) Variant

@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class EndMenu : MonoBehaviour
 {
     [SerializeField] TMP_Text sentence;
+
+        [SerializeField] GameObject HideElement;
     public void WriteSentence(string lastCheckpointDone)
     {
         sentence.text = "Vous avez r�ussir � accomplir : \"" + lastCheckpointDone + "\"";
@@ -16,5 +18,12 @@ public class EndMenu : MonoBehaviour
         public void reloadedScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void hideElement()
+    {
+        if (HideElement == null) return;
+        
+        HideElement.SetActive(false);
     }
 }
