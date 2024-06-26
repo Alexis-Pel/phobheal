@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject endMenuCanva;
+    public EndMenu endMenuCanva;
     public int totalSteps;
     public string[] stepsObjective;
     
@@ -57,7 +58,8 @@ public class GameManager : MonoBehaviour
     {
         if (isWin) return;
         isWin = true;
-        Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
+        EndMenu currentEndMenu = Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
+        currentEndMenu.WriteSentence(stepsObjective[Math.Min(stepCompleted - 1, 0)]);
     }
 
 
@@ -71,7 +73,7 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke();
         isWin = false;
-        SceneManager.LoadScene(((int)ScenesEnum.MENU), LoadSceneMode.Single);
+        SceneManager.LoadScene((int)ScenesEnum.MENU, LoadSceneMode.Single);
     }
 
     public void StopGame()
