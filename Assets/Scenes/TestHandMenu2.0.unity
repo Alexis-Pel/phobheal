@@ -843,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
       propertyPath: m_Name
-      value: Start Menu Canvas
+      value: Start Menu Kenophobia
       objectReference: {fileID: 0}
     - target: {fileID: 5441691781290301105, guid: 62f9a50d65e286944b33a4c2463f7804, type: 3}
       propertyPath: m_IsActive
