@@ -37789,14 +37789,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3902759962391338671, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4512432024783169086, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4601326145144086045, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_AimTargetObject
       value: 
@@ -37889,40 +37881,8 @@ PrefabInstance:
       propertyPath: m_StartingGroupMembers.Array.data[2]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 508.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 9.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7150263404792931206, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7550659358971499910, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8125188084966164455, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8579027868682799920, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8631736947988741032, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37931,8 +37891,6 @@ PrefabInstance:
     - {fileID: 8601932221697548525, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
     - {fileID: 3041663048504250025, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
     - {fileID: 8419022881250081894, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-    - {fileID: 1910377563055198269, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
-    - {fileID: 821695317204018761, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2026103698101026713, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
