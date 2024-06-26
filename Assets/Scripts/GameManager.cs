@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
     {
         CancelInvoke();
         isWin = false;
+        Time.timeScale = 1; //In case the game was paused
         SceneManager.LoadScene((int)ScenesEnum.MENU, LoadSceneMode.Single);
     }
 

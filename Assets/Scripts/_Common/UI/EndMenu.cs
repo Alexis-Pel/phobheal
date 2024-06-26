@@ -12,7 +12,7 @@ public class EndMenu : MonoBehaviour
         [SerializeField] GameObject HideElement;
     public void WriteSentence(string lastCheckpointDone)
     {
-        sentence.text = "Vous avez r�ussir � accomplir : \"" + lastCheckpointDone + "\"";
+        sentence.text = "Vous avez réussir à accomplir : \"" + lastCheckpointDone + "\"";
     }
 
         public void reloadedScene()

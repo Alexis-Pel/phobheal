@@ -2528,6 +2528,7 @@ MonoBehaviour:
   - {fileID: 909733968}
   LightsList: []
   interactorSwitchElectricMeterScript: {fileID: 69715932}
+  electricMeterScript: {fileID: 0}
   _isOn: 0
 --- !u!64 &69715935
 MeshCollider:
@@ -10809,6 +10810,7 @@ MonoBehaviour:
   - {fileID: 217922731}
   - {fileID: 1624606162}
   interactorSwitchElectricMeterScript: {fileID: 419975808}
+  electricMeterScript: {fileID: 0}
   _isOn: 0
 --- !u!64 &419975811
 MeshCollider:
@@ -39153,6 +39155,7 @@ MonoBehaviour:
   - {fileID: 1511598327}
   - {fileID: 1505559510}
   - {fileID: 37440590}
+  electricMeterSwitchMasterIsOn: 0
 --- !u!1 &1525976347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2026103698101026713, guid: ab598c8f3a8c14ff28163040d91d9a56, type: 3}
@@ -39391,7 +39394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51804,6 +51807,7 @@ MonoBehaviour:
   - {fileID: 909733963}
   LightsList: []
   interactorSwitchElectricMeterScript: {fileID: 2037907231}
+  electricMeterScript: {fileID: 0}
   _isOn: 0
 --- !u!64 &2037907234
 MeshCollider:
