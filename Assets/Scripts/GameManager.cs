@@ -59,8 +59,12 @@ public class GameManager : MonoBehaviour
         if (isWin) return;
         isWin = true;
         EndMenu currentEndMenu = Instantiate(endMenuCanva, GameObject.FindGameObjectsWithTag("MainCamera")[0].transform);
-        currentEndMenu.WriteSentence(stepsObjective[Math.Min(stepCompleted - 1, 0)]);
+        if (stepsObjective.Length > 0)
+        {
+            currentEndMenu.WriteSentence(stepsObjective[Math.Min(stepCompleted - 1, 0)]);
+        }
     }
+
 
 
     /**

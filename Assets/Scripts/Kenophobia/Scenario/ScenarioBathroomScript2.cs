@@ -53,6 +53,11 @@ public class ScenarioBathroomScript2 : MonoBehaviour
             {
                 return CheckPlayerAtFinalDestination(steps[step].destinationPoint);
             }
+            else if (step == totalSteps)
+            {
+                GameManager.Instance.WinGame();
+                PlayerPrefs.SetInt("SelectedLevel", 3);
+            }
             return false;
         });
     }
